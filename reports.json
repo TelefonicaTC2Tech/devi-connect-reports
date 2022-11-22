@@ -1,0 +1,93 @@
+{
+    "name":"Custom_Project",
+    "readme_file":"README.md",
+    "version":"1.0.0",
+    "language":"python",
+    "reports":[
+       {
+          "name":"poc_report",
+          "readme_file":"poc/Readme.md",
+          "start_row":2,
+          "start_col":1,
+          "entrypoint":"poc.entrypoint.generate",
+          "audience":[
+             "provider"
+          ],
+          "report_spec":"1",
+          "renderers": [
+            {
+               "id": "xlsx",
+               "type": "xlsx",
+               "default": true,
+               "description": "Export data in Microsoft Excel 2020 format.",
+               "template":"reports/poc_report/templates/template.xlsx",
+               "args": {
+                  "start_row": 2,
+                  "start_col": 1
+               }
+            },
+            {
+               "id": "json",
+               "type": "json",
+               "default": false,
+               "description": "Export data as JSON"
+            },
+            {
+               "id": "csv",
+               "type": "csv",
+               "default": false,
+               "description": "Export data as CSV"
+            }
+         ],
+          "parameters":[
+             {
+                "id":"date",
+                "type":"date_range",
+                "name":"Report period",
+                "description":"Provide the time period to create the report",
+                "required":true
+             },
+             {
+                "id":"product",
+                "type":"product",
+                "name":"Product List",
+                "description":"Select the products you want to include in report",
+                "required":true,
+                "all":true
+             },
+             {
+                "id": "rr_type",
+                "type": "checkbox",
+                "name": "Types of requests",
+                "description": "Select the requests types you want to include in report",
+                "required": true,
+                "all":true
+             },
+             {
+                "id": "rr_status",
+                "type": "checkbox",
+                "name": "Request status",
+                "description": "Select the status of the requests you want to include in report",
+                "required": true,
+                "all":true
+             },
+             {
+               "id":"mkp",
+               "type":"marketplace",
+               "name":"Marketplaces",
+               "required":true,
+               "description":"Select the marketplaces you want to include in report",
+               "all":true
+            },
+            {
+               "id":"mkp",
+               "type":"marketplace",
+               "name":"Marketplaces",
+               "required":true,
+               "description":"Select the marketplaces you want to include in report",
+               "all":true
+            }
+          ]
+       }
+    ]
+ }

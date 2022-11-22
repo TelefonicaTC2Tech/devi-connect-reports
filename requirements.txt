@@ -1,0 +1,5 @@
+ansicolors==1.1.8
+connect-cli==25.1
+connect-markdown-renderer==1.0.1
+connect-openapi-client==24.6
+connect-reports-core==24.0.3
