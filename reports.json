@@ -1,15 +1,15 @@
 {
-    "name":"Custom_Project",
+    "name":"Reports poc",
     "readme_file":"README.md",
     "version":"1.0.0",
     "language":"python",
     "reports":[
        {
           "name":"poc_report",
-          "readme_file":"poc/Readme.md",
+          "readme_file":"reports/poc_report/poc/Readme.md",
           "start_row":2,
           "start_col":1,
-          "entrypoint":"poc.entrypoint.generate",
+          "entrypoint":"reports.poc_report.entrypoint.generate",
           "audience":[
              "provider"
           ],
@@ -20,7 +20,7 @@
                "type": "xlsx",
                "default": true,
                "description": "Export data in Microsoft Excel 2020 format.",
-               "template":"reports/poc_report/templates/template.xlsx",
+               "template":"reports/poc_report/templates/xlsx/template.xlsx",
                "args": {
                   "start_row": 2,
                   "start_col": 1
