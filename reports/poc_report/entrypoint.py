@@ -1,12 +1,11 @@
 from connect.client import R
 
-from reports.fields import Field
-from reports.utils import convert_to_datetime, convert_to_int, get_value, get_value_from_array_by_id, get_value_from_array_by_key
+from reports.fields import Field, Fields
+from reports.utils import get_value
 
 FIELDS = Fields((
     Field('Request ID', lambda r: get_value(r, 'id')),
-    Field('Asset External ID', lambda r: get_value(r, 'asset.external_id')),
-    Field('Created At', lambda r: convert_to_datetime(get_value(r, 'created'))),
+    Field('Asset External ID', lambda r: get_value(r, 'asset.external_id'))
 ))
 
 
@@ -40,28 +39,10 @@ def _get_requests(client, parameters):
     all_connections = ['test']
 
     query = R()
-    query &= R().created.ge(parameters['date']['after'])
-    query &= R().created.le(parameters['date']['before'])
+    query &= R().events.created.at.ge(parameters['date']['after'])
+    query &= R().events.created.at.le(parameters['date']['before'])
 
     if parameters.get('product') and parameters['product']['all'] is False:
         query &= R().asset.product.id.oneof(parameters['product']['choices'])
-    if parameters.get('rr_type') and parameters['rr_type']['all'] is False:
-        query &= R().type.oneof(parameters['rr_type']['choices'])
-    if parameters.get('rr_status') and parameters['rr_status']['all'] is False:
-        query &= R().status.oneof(parameters['rr_status']['choices'])
-    if parameters.get('mkp') and parameters['mkp']['all'] is False:
-        query &= R().asset.marketplace.id.oneof(parameters['mkp']['choices'])
-    if parameters.get('hub') and parameters['hub']['all'] is False:
-        query &= R().asset.connection.hub.id.oneof(
-            parameters['hub']['choices'])
-    else:
-        query &= R().asset.connection.type.oneof(all_connections)
-    if parameters.get('environment') and parameters['environment']['all'] is False:
-        query &= R().asset.connection.type.oneof(
-            parameters['environment']['choices'])
 
-    return client.requests.filter(query)
-
-
-def _exists_item(request, item_name):
-    return get_value_from_array_by_key(request, 'asset.items', 'display_name', item_name, 'quantity', '0') != '0'
+    return client.requests.filter(query).all()
