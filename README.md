@@ -213,7 +213,7 @@ https://apispec.connect.cloudblue.com/public/v1/requests
 
 ## 5.3 Pagination
 
-Request parameters limit and offset are available in order to page the results:
+Request parameters limit and offset are available in order to paginate the results:
 ```
     https://api.connect.cloudblue.com/public/v1/requests?and(ge(events.created.at,2022-11-10T23:00:00+00:00),le(events.created.at,2022-11-11T23:00:00+00:00))&ordering(created)&limit=500&offset=0
 ```
