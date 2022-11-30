@@ -187,3 +187,56 @@ Steps:
 - Press the link `CREATE REPORT`.
 - Select one of the templates of this repository. 
 - Complete the wizard specific for the selected template.
+
+# 5 Reports API
+
+This tool access to information through [Connect API](https://connect.cloudblue.com/community/developers/api/openapi/).
+
+## 5.1 Headers
+These headers must be sent
+
+## 5.1.1 Authorization
+
+Requests must have Authorization header with value:
+
+```
+    ApiKey XXXX:xxxxxx
+```
+
+## 5.1.2 Accept
+
+Requests must have accept header with value application/json
+
+## 5.2 Endpoint
+
+https://apispec.connect.cloudblue.com/public/v1/requests
+
+## 5.3 Pagination
+
+Request parameters limit and offset are available in order to page the results:
+```
+    https://api.connect.cloudblue.com/public/v1/requests?and(ge(events.created.at,2022-11-10T23:00:00+00:00),le(events.created.at,2022-11-11T23:00:00+00:00))&ordering(created)&limit=500&offset=0
+```
+
+## 5.4 Sort
+
+ordering request parameteris available in order to sort the results:
+```
+    https://api.connect.cloudblue.com/public/v1/requests?and(ge(events.created.at,2022-11-10T23:00:00+00:00),le(events.created.at,2022-11-11T23:00:00+00:00))&ordering(created)&limit=500&offset=0
+```
+
+## 5.5 Query
+
+[RQL language](https://connect.cloudblue.com/community/developers/api/rql/) is used in order to perform queries that allows us to filter the results
+
+i.e.
+
+```
+    and(ge(events.created.at,2022-11-10T23:00:00+00:00),le(events.created.at,2022-11-11T23:00:00+00:00),in(asset.product.id,(__product_id__)))
+```
+
+This query is sent as request param:
+
+```
+    https://api.connect.cloudblue.com/public/v1/requests?and(ge(events.created.at,2022-11-10T23:00:00+00:00),le(events.created.at,2022-11-11T23:00:00+00:00))&ordering(created)&limit=500&offset=0
+```
