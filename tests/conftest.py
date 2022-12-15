@@ -3,15 +3,17 @@
 # Copyright (c) 2022, TCCT
 # All rights reserved.
 #
-from collections import namedtuple
-from collections.abc import Iterable
-from types import MethodType
-from urllib.parse import parse_qs
 
-import pytest
-import requests
-import responses
 from connect.client import ConnectClient
+import responses
+import requests
+import pytest
+from urllib.parse import parse_qs
+from types import MethodType
+from collections.abc import Iterable
+from collections import namedtuple
+import json
+import os
 
 
 ConnectResponse = namedtuple(
@@ -62,7 +64,8 @@ def _mock_kwargs_generator(response_iterator, url):
     if res.count is not None:
         end = 0 if res.count == 0 else res.count - 1
         mock_kwargs['status'] = 200
-        mock_kwargs['headers'] = {'Content-Range': f'items 0-{end}/{res.count}'}
+        mock_kwargs['headers'] = {
+            'Content-Range': f'items 0-{end}/{res.count}'}
         mock_kwargs['json'] = []
 
     mock_kwargs.update(_value_arg_validation(res))
@@ -132,7 +135,6 @@ def response_factory():
     return _create_response
 
 
-
 @pytest.fixture
 def sync_client_factory():
     def _create_client(connect_responses):
@@ -155,7 +157,8 @@ def sync_client_factory():
             if res.count is not None:
                 end = 0 if res.count == 0 else res.count - 1
                 mock_kwargs['status'] = 200
-                mock_kwargs['headers'] = {'Content-Range': f'items 0-{end}/{res.count}'}
+                mock_kwargs['headers'] = {
+                    'Content-Range': f'items 0-{end}/{res.count}'}
                 mock_kwargs['json'] = []
 
             if isinstance(res.value, Iterable):
@@ -177,7 +180,7 @@ def sync_client_factory():
             else:
                 mock_kwargs['status'] = res.status or 200
                 mock_kwargs['body'] = str(res.value)
-            
+
             with responses.RequestsMock() as rsps:
                 rsps.add(
                     method.upper(),
@@ -185,7 +188,7 @@ def sync_client_factory():
                     **mock_kwargs,
                 )
                 self.response = requests.request(method, url, **kwargs)
-            
+
                 if self.response.status_code >= 400:
                     self.response.raise_for_status()
 
@@ -193,3 +196,16 @@ def sync_client_factory():
         client._execute_http_call = MethodType(_execute_http_call, client)
         return client
     return _create_client
+
+
+@pytest.fixture
+def poc_response():
+    with open(
+        os.path.join(
+            os.getcwd(),
+            'tests',
+            'fixtures',
+            'poc_response.json',
+        ),
+    ) as request:
+        return json.load(request)

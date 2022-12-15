@@ -1,0 +1,4034 @@
+[{
+    "id": "PR-529-537-766-7-002",
+    "type": "suspend",
+    "note": "",
+    "asset": {
+        "id": "AS-529-537-766-7",
+        "status": "active",
+        "external_id": "10008101",
+        "external_uid": "78e4e645-ca1b-42a9-bda0-91edbf737c28",
+        "product": {
+            "id": "PRD-136-884-767",
+            "icon": "/media/VA-209-443/PRD-136-884-767/media/PRD-136-884-767-logo.png",
+            "name": "APS PPU Test",
+            "status": "published"
+        },
+        "connection": {
+            "id": "CT-2955-7645",
+            "type": "test",
+            "status": "approved",
+            "provider": {
+                "id": "PA-633-616",
+                "name": "Telefonica",
+                "icon": "/media/PA-633-616/media/icon_CZ7w6DY.png"
+            },
+            "vendor": {
+                "id": "VA-209-443",
+                "name": "Telefonica Vendor"
+            },
+            "hub": {
+                "id": "HB-2747-1221",
+                "name": "Integration HUB"
+            },
+            "created_at": "2019-04-29T21:41:34+00:00"
+        },
+        "events": {
+            "created": {
+                "at": "2019-10-02T08:19:21+00:00"
+            },
+            "updated": {
+                "at": "2020-03-01T02:15:26+00:00"
+            }
+        },
+        "items": [{
+                "id": "MPN_PPU",
+                "global_id": "PRD-136-884-767-0001",
+                "mpn": "MPN-PPU",
+                "old_quantity": "unlimited",
+                "quantity": "unlimited",
+                "type": "Unit*H",
+                "display_name": "PPU",
+                "period": "Monthly",
+                "item_type": "PPU"
+            }, {
+                "id": "PRD_136_884_767_0002",
+                "global_id": "PRD-136-884-767-0002",
+                "mpn": "",
+                "old_quantity": "1",
+                "quantity": "1",
+                "type": "reservation",
+                "display_name": "Prd 136 884 767 0002",
+                "period": "Monthly",
+                "item_type": "Reservation"
+            }
+        ],
+        "params": [{
+                "id": "CUIT",
+                "name": "CUIT",
+                "type": "text",
+                "phase": "ordering",
+                "description": "CUIT",
+                "value": "",
+                "value_error": "",
+                "title": "CUIT",
+                "constraints": {
+                    "required": true,
+                    "meta": {},
+                    "hidden": false,
+                    "readonly": false
+                }
+            }, {
+                "id": "accountID",
+                "name": "accountID",
+                "type": "text",
+                "phase": "fulfillment",
+                "description": "Account ID",
+                "value": "706990",
+                "value_error": "",
+                "title": "Title of the Parameter account ID",
+                "constraints": {
+                    "meta": {},
+                    "required": true,
+                    "hidden": false,
+                    "readonly": false
+                }
+            }, {
+                "id": "email",
+                "name": "email",
+                "type": "text",
+                "phase": "ordering",
+                "description": "email",
+                "value": "",
+                "value_error": "",
+                "title": "email",
+                "constraints": {
+                    "required": false,
+                    "meta": {},
+                    "hidden": false,
+                    "readonly": false
+                }
+            }
+        ],
+        "tiers": {
+            "customer": {
+                "id": "TA-0-5698-3877-0546",
+                "version": 1,
+                "name": "QADEVNER27091025",
+                "type": "customer",
+                "db": "US",
+                "external_id": "1043288",
+                "external_uid": "a5a098c7-913b-4d6e-874f-048f98b2c06a",
+                "owner": {
+                    "id": "PA-633-616",
+                    "name": "Telefonica",
+                    "icon": "/media/PA-633-616/media/icon_CZ7w6DY.png"
+                },
+                "scopes": [
+                    "customer"
+                ],
+                "hub": {
+                    "id": "HB-2747-1221",
+                    "name": "Integration HUB"
+                },
+                "events": {
+                    "created": {
+                        "at": "2019-09-27T08:27:26+00:00"
+                    },
+                    "updated": {
+                        "at": "2019-10-14T08:03:23+00:00"
+                    }
+                },
+                "environment": "test",
+                "contact_info": {
+                    "address_line1": "Av. Mariscal La Mar 918",
+                    "address_line2": null,
+                    "city": "Buenos Aires",
+                    "state": null,
+                    "postal_code": "B1827",
+                    "country": "ar",
+                    "contact": {
+                        "first_name": "QADEVNER27091025",
+                        "last_name": "TELF",
+                        "email": "QADEVNER27091025@yopmail.com",
+                        "phone_number": {
+                            "country_code": "+00",
+                            "area_code": "51",
+                            "phone_number": "12345678",
+                            "extension": ""
+                        }
+                    }
+                }
+            },
+            "tier1": {
+                "id": "TA-0-2372-3440-5680",
+                "version": 78,
+                "name": "Movistar Demo",
+                "type": "reseller",
+                "db": "EU",
+                "external_id": "1000180",
+                "external_uid": "db27abd8-2b2a-49af-9a08-5d9362f015e4",
+                "parent": {
+                    "id": "TA-0-1665-7272-8763",
+                    "name": "Telefónica Digital INT",
+                    "external_id": "1"
+                },
+                "owner": {
+                    "id": "PA-633-616",
+                    "name": "Telefonica",
+                    "icon": "/media/PA-633-616/media/icon_CZ7w6DY.png"
+                },
+                "scopes": [
+                    "tier1"
+                ],
+                "hub": {
+                    "id": "HB-2747-1221",
+                    "name": "Integration HUB"
+                },
+                "events": {
+                    "created": {
+                        "at": "2019-01-25T15:28:16+00:00",
+                        "by": {
+                            "id": "SU-339-207-107",
+                            "name": "HB-2747-1221"
+                        }
+                    },
+                    "updated": {
+                        "at": "2019-10-14T08:03:23+00:00",
+                        "by": {
+                            "id": "SU-339-207-107",
+                            "name": "HB-2747-1221"
+                        }
+                    }
+                },
+                "environment": "test",
+                "contact_info": {
+                    "address_line1": "Gardoki 1",
+                    "address_line2": "",
+                    "city": "Bilbao",
+                    "state": "",
+                    "postal_code": "48008",
+                    "country": "es",
+                    "contact": {
+                        "first_name": "Alicia",
+                        "last_name": "Florrick",
+                        "email": "eli.gold@yopmail.com",
+                        "phone_number": {
+                            "country_code": "+34",
+                            "area_code": "",
+                            "phone_number": "45600600",
+                            "extension": "3200"
+                        }
+                    }
+                }
+            },
+            "tier2": {
+                "id": "TA-0-1665-7272-8763",
+                "version": 3194,
+                "name": "Telefónica Digital INT",
+                "type": "reseller",
+                "db": "EU",
+                "external_id": "1",
+                "external_uid": "d14d5c8e-45fd-4a30-a45d-4c49d8db8069",
+                "owner": {
+                    "id": "PA-633-616",
+                    "name": "Telefonica",
+                    "icon": "/media/PA-633-616/media/icon_CZ7w6DY.png"
+                },
+                "scopes": [
+                    "tier1",
+                    "tier2"
+                ],
+                "hub": {
+                    "id": "HB-2747-1221",
+                    "name": "Integration HUB"
+                },
+                "events": {
+                    "created": {
+                        "at": "2018-10-05T10:41:12+00:00",
+                        "by": {
+                            "id": "SU-339-207-107",
+                            "name": "HB-2747-1221"
+                        }
+                    },
+                    "updated": {
+                        "at": "2019-10-24T11:06:04+00:00",
+                        "by": {
+                            "id": "SU-529-580-056",
+                            "name": "PLM API"
+                        }
+                    }
+                },
+                "environment": "test",
+                "contact_info": {
+                    "address_line1": "Distrito Telefónica",
+                    "address_line2": "Ronda de la Comunicación, s/n",
+                    "city": "Madrid",
+                    "state": "Madrid",
+                    "postal_code": "28050",
+                    "country": "es",
+                    "contact": {
+                        "first_name": "CSB",
+                        "last_name": "Password Resets",
+                        "email": "noreply@dev.csbtest.telefonica.com",
+                        "phone_number": {
+                            "country_code": "+44",
+                            "area_code": "7447",
+                            "phone_number": "274385",
+                            "extension": ""
+                        }
+                    }
+                }
+            }
+        },
+        "pending_request": {
+            "id": "PR-529-537-766-7-002",
+            "type": "suspend",
+            "status": "pending",
+            "template": {
+                "id": "TL-178-198-490",
+                "name": "Default Subscription Pending Template"
+            }
+        },
+        "marketplace": {
+            "id": "MP-00000",
+            "name": "None"
+        },
+        "contract": {
+            "id": "CRD-00000-00000-00000",
+            "name": "None"
+        },
+        "configuration": {
+            "params": []
+        }
+    },
+    "reason": "",
+    "status": "pending",
+    "created": "2022-03-03T02:11:39+00:00",
+    "updated": "2022-03-03T02:11:39+00:00",
+    "answered": false,
+    "assignee": "",
+    "activation_key": "Please wait while your request is being fulfilled.",
+    "template": {
+        "id": "TL-178-198-490",
+        "name": "Default Subscription Pending Template",
+        "message": "Please wait while your request is being fulfilled."
+    },
+    "marketplace": {
+        "id": "MP-00000",
+        "name": "None"
+    },
+    "contract": {
+        "id": "CRD-00000-00000-00000",
+        "name": "None"
+    },
+    "previous_approved_request": {
+        "id": "PR-2638-4961-4081-001"
+    },
+    "effective_date": null,
+    "planned_date": null,
+    "events": {
+        "created": {
+            "at": "2022-03-03T02:11:39+00:00"
+        },
+        "updated": {
+            "at": "2022-03-03T02:11:39+00:00"
+        }
+    }
+}, {
+    "id": "PR-086-231-628-1-002",
+    "type": "suspend",
+    "note": "",
+    "asset": {
+        "id": "AS-086-231-628-1",
+        "status": "active",
+        "external_id": "10008099",
+        "external_uid": "d9e0f6e0-9ab5-4b07-af71-11301fdc5cc3",
+        "product": {
+            "id": "PRD-136-884-767",
+            "icon": "/media/VA-209-443/PRD-136-884-767/media/PRD-136-884-767-logo.png",
+            "name": "APS PPU Test",
+            "status": "published"
+        },
+        "connection": {
+            "id": "CT-2955-7645",
+            "type": "test",
+            "status": "approved",
+            "provider": {
+                "id": "PA-633-616",
+                "name": "Telefonica",
+                "icon": "/media/PA-633-616/media/icon_CZ7w6DY.png"
+            },
+            "vendor": {
+                "id": "VA-209-443",
+                "name": "Telefonica Vendor"
+            },
+            "hub": {
+                "id": "HB-2747-1221",
+                "name": "Integration HUB"
+            },
+            "created_at": "2019-04-29T21:41:34+00:00"
+        },
+        "events": {
+            "created": {
+                "at": "2019-10-02T08:12:13+00:00"
+            },
+            "updated": {
+                "at": "2020-03-01T02:14:47+00:00"
+            }
+        },
+        "items": [{
+                "id": "MPN_PPU",
+                "global_id": "PRD-136-884-767-0001",
+                "mpn": "MPN-PPU",
+                "old_quantity": "unlimited",
+                "quantity": "unlimited",
+                "type": "Unit*H",
+                "display_name": "PPU",
+                "period": "Monthly",
+                "item_type": "PPU"
+            }, {
+                "id": "PRD_136_884_767_0002",
+                "global_id": "PRD-136-884-767-0002",
+                "mpn": "",
+                "old_quantity": "1",
+                "quantity": "1",
+                "type": "reservation",
+                "display_name": "Prd 136 884 767 0002",
+                "period": "Monthly",
+                "item_type": "Reservation"
+            }
+        ],
+        "params": [{
+                "id": "CUIT",
+                "name": "CUIT",
+                "type": "text",
+                "phase": "ordering",
+                "description": "CUIT",
+                "value": "",
+                "value_error": "",
+                "title": "CUIT",
+                "constraints": {
+                    "required": true,
+                    "meta": {},
+                    "hidden": false,
+                    "readonly": false
+                }
+            }, {
+                "id": "accountID",
+                "name": "accountID",
+                "type": "text",
+                "phase": "fulfillment",
+                "description": "Account ID",
+                "value": "463540",
+                "value_error": "",
+                "title": "Title of the Parameter account ID",
+                "constraints": {
+                    "meta": {},
+                    "required": true,
+                    "hidden": false,
+                    "readonly": false
+                }
+            }, {
+                "id": "email",
+                "name": "email",
+                "type": "text",
+                "phase": "ordering",
+                "description": "email",
+                "value": "",
+                "value_error": "",
+                "title": "email",
+                "constraints": {
+                    "required": false,
+                    "meta": {},
+                    "hidden": false,
+                    "readonly": false
+                }
+            }
+        ],
+        "tiers": {
+            "customer": {
+                "id": "TA-0-5698-3877-0546",
+                "version": 1,
+                "name": "QADEVNER27091025",
+                "type": "customer",
+                "db": "US",
+                "external_id": "1043288",
+                "external_uid": "a5a098c7-913b-4d6e-874f-048f98b2c06a",
+                "owner": {
+                    "id": "PA-633-616",
+                    "name": "Telefonica",
+                    "icon": "/media/PA-633-616/media/icon_CZ7w6DY.png"
+                },
+                "scopes": [
+                    "customer"
+                ],
+                "hub": {
+                    "id": "HB-2747-1221",
+                    "name": "Integration HUB"
+                },
+                "events": {
+                    "created": {
+                        "at": "2019-09-27T08:27:26+00:00"
+                    },
+                    "updated": {
+                        "at": "2019-10-14T08:03:23+00:00"
+                    }
+                },
+                "environment": "test",
+                "contact_info": {
+                    "address_line1": "Av. Mariscal La Mar 918",
+                    "address_line2": null,
+                    "city": "Buenos Aires",
+                    "state": null,
+                    "postal_code": "B1827",
+                    "country": "ar",
+                    "contact": {
+                        "first_name": "QADEVNER27091025",
+                        "last_name": "TELF",
+                        "email": "QADEVNER27091025@yopmail.com",
+                        "phone_number": {
+                            "country_code": "+00",
+                            "area_code": "51",
+                            "phone_number": "12345678",
+                            "extension": ""
+                        }
+                    }
+                }
+            },
+            "tier1": {
+                "id": "TA-0-2372-3440-5680",
+                "version": 78,
+                "name": "Movistar Demo",
+                "type": "reseller",
+                "db": "EU",
+                "external_id": "1000180",
+                "external_uid": "db27abd8-2b2a-49af-9a08-5d9362f015e4",
+                "parent": {
+                    "id": "TA-0-1665-7272-8763",
+                    "name": "Telefónica Digital INT",
+                    "external_id": "1"
+                },
+                "owner": {
+                    "id": "PA-633-616",
+                    "name": "Telefonica",
+                    "icon": "/media/PA-633-616/media/icon_CZ7w6DY.png"
+                },
+                "scopes": [
+                    "tier1"
+                ],
+                "hub": {
+                    "id": "HB-2747-1221",
+                    "name": "Integration HUB"
+                },
+                "events": {
+                    "created": {
+                        "at": "2019-01-25T15:28:16+00:00",
+                        "by": {
+                            "id": "SU-339-207-107",
+                            "name": "HB-2747-1221"
+                        }
+                    },
+                    "updated": {
+                        "at": "2019-10-14T08:03:23+00:00",
+                        "by": {
+                            "id": "SU-339-207-107",
+                            "name": "HB-2747-1221"
+                        }
+                    }
+                },
+                "environment": "test",
+                "contact_info": {
+                    "address_line1": "Gardoki 1",
+                    "address_line2": "",
+                    "city": "Bilbao",
+                    "state": "",
+                    "postal_code": "48008",
+                    "country": "es",
+                    "contact": {
+                        "first_name": "Alicia",
+                        "last_name": "Florrick",
+                        "email": "eli.gold@yopmail.com",
+                        "phone_number": {
+                            "country_code": "+34",
+                            "area_code": "",
+                            "phone_number": "45600600",
+                            "extension": "3200"
+                        }
+                    }
+                }
+            },
+            "tier2": {
+                "id": "TA-0-1665-7272-8763",
+                "version": 3194,
+                "name": "Telefónica Digital INT",
+                "type": "reseller",
+                "db": "EU",
+                "external_id": "1",
+                "external_uid": "d14d5c8e-45fd-4a30-a45d-4c49d8db8069",
+                "owner": {
+                    "id": "PA-633-616",
+                    "name": "Telefonica",
+                    "icon": "/media/PA-633-616/media/icon_CZ7w6DY.png"
+                },
+                "scopes": [
+                    "tier1",
+                    "tier2"
+                ],
+                "hub": {
+                    "id": "HB-2747-1221",
+                    "name": "Integration HUB"
+                },
+                "events": {
+                    "created": {
+                        "at": "2018-10-05T10:41:12+00:00",
+                        "by": {
+                            "id": "SU-339-207-107",
+                            "name": "HB-2747-1221"
+                        }
+                    },
+                    "updated": {
+                        "at": "2019-10-24T11:06:04+00:00",
+                        "by": {
+                            "id": "SU-529-580-056",
+                            "name": "PLM API"
+                        }
+                    }
+                },
+                "environment": "test",
+                "contact_info": {
+                    "address_line1": "Distrito Telefónica",
+                    "address_line2": "Ronda de la Comunicación, s/n",
+                    "city": "Madrid",
+                    "state": "Madrid",
+                    "postal_code": "28050",
+                    "country": "es",
+                    "contact": {
+                        "first_name": "CSB",
+                        "last_name": "Password Resets",
+                        "email": "noreply@dev.csbtest.telefonica.com",
+                        "phone_number": {
+                            "country_code": "+44",
+                            "area_code": "7447",
+                            "phone_number": "274385",
+                            "extension": ""
+                        }
+                    }
+                }
+            }
+        },
+        "pending_request": {
+            "id": "PR-086-231-628-1-002",
+            "type": "suspend",
+            "status": "pending",
+            "template": {
+                "id": "TL-178-198-490",
+                "name": "Default Subscription Pending Template"
+            }
+        },
+        "marketplace": {
+            "id": "MP-00000",
+            "name": "None"
+        },
+        "contract": {
+            "id": "CRD-00000-00000-00000",
+            "name": "None"
+        },
+        "configuration": {
+            "params": []
+        }
+    },
+    "reason": "",
+    "status": "pending",
+    "created": "2022-03-03T02:11:40+00:00",
+    "updated": "2022-03-03T02:11:40+00:00",
+    "answered": false,
+    "assignee": "",
+    "activation_key": "Please wait while your request is being fulfilled.",
+    "template": {
+        "id": "TL-178-198-490",
+        "name": "Default Subscription Pending Template",
+        "message": "Please wait while your request is being fulfilled."
+    },
+    "marketplace": {
+        "id": "MP-00000",
+        "name": "None"
+    },
+    "contract": {
+        "id": "CRD-00000-00000-00000",
+        "name": "None"
+    },
+    "previous_approved_request": {
+        "id": "PR-6222-6914-8307-001"
+    },
+    "effective_date": null,
+    "planned_date": null,
+    "events": {
+        "created": {
+            "at": "2022-03-03T02:11:40+00:00"
+        },
+        "updated": {
+            "at": "2022-03-03T02:11:40+00:00"
+        }
+    }
+}, {
+    "id": "PR-864-713-670-6-002",
+    "type": "suspend",
+    "note": "",
+    "asset": {
+        "id": "AS-864-713-670-6",
+        "status": "active",
+        "external_id": "10008102",
+        "external_uid": "85dd0527-78e2-479f-8445-5183f2d95b37",
+        "product": {
+            "id": "PRD-136-884-767",
+            "icon": "/media/VA-209-443/PRD-136-884-767/media/PRD-136-884-767-logo.png",
+            "name": "APS PPU Test",
+            "status": "published"
+        },
+        "connection": {
+            "id": "CT-2955-7645",
+            "type": "test",
+            "status": "approved",
+            "provider": {
+                "id": "PA-633-616",
+                "name": "Telefonica",
+                "icon": "/media/PA-633-616/media/icon_CZ7w6DY.png"
+            },
+            "vendor": {
+                "id": "VA-209-443",
+                "name": "Telefonica Vendor"
+            },
+            "hub": {
+                "id": "HB-2747-1221",
+                "name": "Integration HUB"
+            },
+            "created_at": "2019-04-29T21:41:34+00:00"
+        },
+        "events": {
+            "created": {
+                "at": "2019-10-02T08:19:47+00:00"
+            },
+            "updated": {
+                "at": "2020-03-01T02:15:26+00:00"
+            }
+        },
+        "items": [{
+                "id": "MPN_PPU",
+                "global_id": "PRD-136-884-767-0001",
+                "mpn": "MPN-PPU",
+                "old_quantity": "unlimited",
+                "quantity": "unlimited",
+                "type": "Unit*H",
+                "display_name": "PPU",
+                "period": "Monthly",
+                "item_type": "PPU"
+            }, {
+                "id": "PRD_136_884_767_0002",
+                "global_id": "PRD-136-884-767-0002",
+                "mpn": "",
+                "old_quantity": "1",
+                "quantity": "1",
+                "type": "reservation",
+                "display_name": "Prd 136 884 767 0002",
+                "period": "Monthly",
+                "item_type": "Reservation"
+            }
+        ],
+        "params": [{
+                "id": "CUIT",
+                "name": "CUIT",
+                "type": "text",
+                "phase": "ordering",
+                "description": "CUIT",
+                "value": "",
+                "value_error": "",
+                "title": "CUIT",
+                "constraints": {
+                    "required": true,
+                    "meta": {},
+                    "hidden": false,
+                    "readonly": false
+                }
+            }, {
+                "id": "accountID",
+                "name": "accountID",
+                "type": "text",
+                "phase": "fulfillment",
+                "description": "Account ID",
+                "value": "522729",
+                "value_error": "",
+                "title": "Title of the Parameter account ID",
+                "constraints": {
+                    "meta": {},
+                    "required": true,
+                    "hidden": false,
+                    "readonly": false
+                }
+            }, {
+                "id": "email",
+                "name": "email",
+                "type": "text",
+                "phase": "ordering",
+                "description": "email",
+                "value": "",
+                "value_error": "",
+                "title": "email",
+                "constraints": {
+                    "required": false,
+                    "meta": {},
+                    "hidden": false,
+                    "readonly": false
+                }
+            }
+        ],
+        "tiers": {
+            "customer": {
+                "id": "TA-0-5698-3877-0546",
+                "version": 1,
+                "name": "QADEVNER27091025",
+                "type": "customer",
+                "db": "US",
+                "external_id": "1043288",
+                "external_uid": "a5a098c7-913b-4d6e-874f-048f98b2c06a",
+                "owner": {
+                    "id": "PA-633-616",
+                    "name": "Telefonica",
+                    "icon": "/media/PA-633-616/media/icon_CZ7w6DY.png"
+                },
+                "scopes": [
+                    "customer"
+                ],
+                "hub": {
+                    "id": "HB-2747-1221",
+                    "name": "Integration HUB"
+                },
+                "events": {
+                    "created": {
+                        "at": "2019-09-27T08:27:26+00:00"
+                    },
+                    "updated": {
+                        "at": "2019-10-14T08:03:23+00:00"
+                    }
+                },
+                "environment": "test",
+                "contact_info": {
+                    "address_line1": "Av. Mariscal La Mar 918",
+                    "address_line2": null,
+                    "city": "Buenos Aires",
+                    "state": null,
+                    "postal_code": "B1827",
+                    "country": "ar",
+                    "contact": {
+                        "first_name": "QADEVNER27091025",
+                        "last_name": "TELF",
+                        "email": "QADEVNER27091025@yopmail.com",
+                        "phone_number": {
+                            "country_code": "+00",
+                            "area_code": "51",
+                            "phone_number": "12345678",
+                            "extension": ""
+                        }
+                    }
+                }
+            },
+            "tier1": {
+                "id": "TA-0-2372-3440-5680",
+                "version": 78,
+                "name": "Movistar Demo",
+                "type": "reseller",
+                "db": "EU",
+                "external_id": "1000180",
+                "external_uid": "db27abd8-2b2a-49af-9a08-5d9362f015e4",
+                "parent": {
+                    "id": "TA-0-1665-7272-8763",
+                    "name": "Telefónica Digital INT",
+                    "external_id": "1"
+                },
+                "owner": {
+                    "id": "PA-633-616",
+                    "name": "Telefonica",
+                    "icon": "/media/PA-633-616/media/icon_CZ7w6DY.png"
+                },
+                "scopes": [
+                    "tier1"
+                ],
+                "hub": {
+                    "id": "HB-2747-1221",
+                    "name": "Integration HUB"
+                },
+                "events": {
+                    "created": {
+                        "at": "2019-01-25T15:28:16+00:00",
+                        "by": {
+                            "id": "SU-339-207-107",
+                            "name": "HB-2747-1221"
+                        }
+                    },
+                    "updated": {
+                        "at": "2019-10-14T08:03:23+00:00",
+                        "by": {
+                            "id": "SU-339-207-107",
+                            "name": "HB-2747-1221"
+                        }
+                    }
+                },
+                "environment": "test",
+                "contact_info": {
+                    "address_line1": "Gardoki 1",
+                    "address_line2": "",
+                    "city": "Bilbao",
+                    "state": "",
+                    "postal_code": "48008",
+                    "country": "es",
+                    "contact": {
+                        "first_name": "Alicia",
+                        "last_name": "Florrick",
+                        "email": "eli.gold@yopmail.com",
+                        "phone_number": {
+                            "country_code": "+34",
+                            "area_code": "",
+                            "phone_number": "45600600",
+                            "extension": "3200"
+                        }
+                    }
+                }
+            },
+            "tier2": {
+                "id": "TA-0-1665-7272-8763",
+                "version": 3194,
+                "name": "Telefónica Digital INT",
+                "type": "reseller",
+                "db": "EU",
+                "external_id": "1",
+                "external_uid": "d14d5c8e-45fd-4a30-a45d-4c49d8db8069",
+                "owner": {
+                    "id": "PA-633-616",
+                    "name": "Telefonica",
+                    "icon": "/media/PA-633-616/media/icon_CZ7w6DY.png"
+                },
+                "scopes": [
+                    "tier1",
+                    "tier2"
+                ],
+                "hub": {
+                    "id": "HB-2747-1221",
+                    "name": "Integration HUB"
+                },
+                "events": {
+                    "created": {
+                        "at": "2018-10-05T10:41:12+00:00",
+                        "by": {
+                            "id": "SU-339-207-107",
+                            "name": "HB-2747-1221"
+                        }
+                    },
+                    "updated": {
+                        "at": "2019-10-24T11:06:04+00:00",
+                        "by": {
+                            "id": "SU-529-580-056",
+                            "name": "PLM API"
+                        }
+                    }
+                },
+                "environment": "test",
+                "contact_info": {
+                    "address_line1": "Distrito Telefónica",
+                    "address_line2": "Ronda de la Comunicación, s/n",
+                    "city": "Madrid",
+                    "state": "Madrid",
+                    "postal_code": "28050",
+                    "country": "es",
+                    "contact": {
+                        "first_name": "CSB",
+                        "last_name": "Password Resets",
+                        "email": "noreply@dev.csbtest.telefonica.com",
+                        "phone_number": {
+                            "country_code": "+44",
+                            "area_code": "7447",
+                            "phone_number": "274385",
+                            "extension": ""
+                        }
+                    }
+                }
+            }
+        },
+        "pending_request": {
+            "id": "PR-864-713-670-6-002",
+            "type": "suspend",
+            "status": "pending",
+            "template": {
+                "id": "TL-178-198-490",
+                "name": "Default Subscription Pending Template"
+            }
+        },
+        "marketplace": {
+            "id": "MP-00000",
+            "name": "None"
+        },
+        "contract": {
+            "id": "CRD-00000-00000-00000",
+            "name": "None"
+        },
+        "configuration": {
+            "params": []
+        }
+    },
+    "reason": "",
+    "status": "pending",
+    "created": "2022-03-03T02:11:40+00:00",
+    "updated": "2022-03-03T02:11:40+00:00",
+    "answered": false,
+    "assignee": "",
+    "activation_key": "Please wait while your request is being fulfilled.",
+    "template": {
+        "id": "TL-178-198-490",
+        "name": "Default Subscription Pending Template",
+        "message": "Please wait while your request is being fulfilled."
+    },
+    "marketplace": {
+        "id": "MP-00000",
+        "name": "None"
+    },
+    "contract": {
+        "id": "CRD-00000-00000-00000",
+        "name": "None"
+    },
+    "previous_approved_request": {
+        "id": "PR-6073-8839-6796-001"
+    },
+    "effective_date": null,
+    "planned_date": null,
+    "events": {
+        "created": {
+            "at": "2022-03-03T02:11:40+00:00"
+        },
+        "updated": {
+            "at": "2022-03-03T02:11:40+00:00"
+        }
+    }
+}, {
+    "id": "PR-108-749-230-0-002",
+    "type": "suspend",
+    "note": "",
+    "asset": {
+        "id": "AS-108-749-230-0",
+        "status": "active",
+        "external_id": "10008132",
+        "external_uid": "f5a6734d-d2c2-4271-af64-9c70c9b81ccd",
+        "product": {
+            "id": "PRD-136-884-767",
+            "icon": "/media/VA-209-443/PRD-136-884-767/media/PRD-136-884-767-logo.png",
+            "name": "APS PPU Test",
+            "status": "published"
+        },
+        "connection": {
+            "id": "CT-2955-7645",
+            "type": "test",
+            "status": "approved",
+            "provider": {
+                "id": "PA-633-616",
+                "name": "Telefonica",
+                "icon": "/media/PA-633-616/media/icon_CZ7w6DY.png"
+            },
+            "vendor": {
+                "id": "VA-209-443",
+                "name": "Telefonica Vendor"
+            },
+            "hub": {
+                "id": "HB-2747-1221",
+                "name": "Integration HUB"
+            },
+            "created_at": "2019-04-29T21:41:34+00:00"
+        },
+        "events": {
+            "created": {
+                "at": "2019-10-02T12:48:10+00:00"
+            },
+            "updated": {
+                "at": "2020-03-01T02:14:45+00:00"
+            }
+        },
+        "items": [{
+                "id": "MPN_PPU",
+                "global_id": "PRD-136-884-767-0001",
+                "mpn": "MPN-PPU",
+                "old_quantity": "unlimited",
+                "quantity": "unlimited",
+                "type": "Unit*H",
+                "display_name": "PPU",
+                "period": "Monthly",
+                "item_type": "PPU"
+            }, {
+                "id": "PRD_136_884_767_0002",
+                "global_id": "PRD-136-884-767-0002",
+                "mpn": "",
+                "old_quantity": "1",
+                "quantity": "1",
+                "type": "reservation",
+                "display_name": "Prd 136 884 767 0002",
+                "period": "Monthly",
+                "item_type": "Reservation"
+            }
+        ],
+        "params": [{
+                "id": "CUIT",
+                "name": "CUIT",
+                "type": "text",
+                "phase": "ordering",
+                "description": "CUIT",
+                "value": "",
+                "value_error": "",
+                "title": "CUIT",
+                "constraints": {
+                    "required": true,
+                    "meta": {},
+                    "hidden": false,
+                    "readonly": false
+                }
+            }, {
+                "id": "accountID",
+                "name": "accountID",
+                "type": "text",
+                "phase": "fulfillment",
+                "description": "Account ID",
+                "value": "678832",
+                "value_error": "",
+                "title": "Title of the Parameter account ID",
+                "constraints": {
+                    "meta": {},
+                    "required": true,
+                    "hidden": false,
+                    "readonly": false
+                }
+            }, {
+                "id": "email",
+                "name": "email",
+                "type": "text",
+                "phase": "ordering",
+                "description": "email",
+                "value": "",
+                "value_error": "",
+                "title": "email",
+                "constraints": {
+                    "required": false,
+                    "meta": {},
+                    "hidden": false,
+                    "readonly": false
+                }
+            }
+        ],
+        "tiers": {
+            "customer": {
+                "id": "TA-0-5698-3877-0546",
+                "version": 1,
+                "name": "QADEVNER27091025",
+                "type": "customer",
+                "db": "US",
+                "external_id": "1043288",
+                "external_uid": "a5a098c7-913b-4d6e-874f-048f98b2c06a",
+                "owner": {
+                    "id": "PA-633-616",
+                    "name": "Telefonica",
+                    "icon": "/media/PA-633-616/media/icon_CZ7w6DY.png"
+                },
+                "scopes": [
+                    "customer"
+                ],
+                "hub": {
+                    "id": "HB-2747-1221",
+                    "name": "Integration HUB"
+                },
+                "events": {
+                    "created": {
+                        "at": "2019-09-27T08:27:26+00:00"
+                    },
+                    "updated": {
+                        "at": "2019-10-14T08:03:23+00:00"
+                    }
+                },
+                "environment": "test",
+                "contact_info": {
+                    "address_line1": "Av. Mariscal La Mar 918",
+                    "address_line2": null,
+                    "city": "Buenos Aires",
+                    "state": null,
+                    "postal_code": "B1827",
+                    "country": "ar",
+                    "contact": {
+                        "first_name": "QADEVNER27091025",
+                        "last_name": "TELF",
+                        "email": "QADEVNER27091025@yopmail.com",
+                        "phone_number": {
+                            "country_code": "+00",
+                            "area_code": "51",
+                            "phone_number": "12345678",
+                            "extension": ""
+                        }
+                    }
+                }
+            },
+            "tier1": {
+                "id": "TA-0-2372-3440-5680",
+                "version": 78,
+                "name": "Movistar Demo",
+                "type": "reseller",
+                "db": "EU",
+                "external_id": "1000180",
+                "external_uid": "db27abd8-2b2a-49af-9a08-5d9362f015e4",
+                "parent": {
+                    "id": "TA-0-1665-7272-8763",
+                    "name": "Telefónica Digital INT",
+                    "external_id": "1"
+                },
+                "owner": {
+                    "id": "PA-633-616",
+                    "name": "Telefonica",
+                    "icon": "/media/PA-633-616/media/icon_CZ7w6DY.png"
+                },
+                "scopes": [
+                    "tier1"
+                ],
+                "hub": {
+                    "id": "HB-2747-1221",
+                    "name": "Integration HUB"
+                },
+                "events": {
+                    "created": {
+                        "at": "2019-01-25T15:28:16+00:00",
+                        "by": {
+                            "id": "SU-339-207-107",
+                            "name": "HB-2747-1221"
+                        }
+                    },
+                    "updated": {
+                        "at": "2019-10-14T08:03:23+00:00",
+                        "by": {
+                            "id": "SU-339-207-107",
+                            "name": "HB-2747-1221"
+                        }
+                    }
+                },
+                "environment": "test",
+                "contact_info": {
+                    "address_line1": "Gardoki 1",
+                    "address_line2": "",
+                    "city": "Bilbao",
+                    "state": "",
+                    "postal_code": "48008",
+                    "country": "es",
+                    "contact": {
+                        "first_name": "Alicia",
+                        "last_name": "Florrick",
+                        "email": "eli.gold@yopmail.com",
+                        "phone_number": {
+                            "country_code": "+34",
+                            "area_code": "",
+                            "phone_number": "45600600",
+                            "extension": "3200"
+                        }
+                    }
+                }
+            },
+            "tier2": {
+                "id": "TA-0-1665-7272-8763",
+                "version": 3194,
+                "name": "Telefónica Digital INT",
+                "type": "reseller",
+                "db": "EU",
+                "external_id": "1",
+                "external_uid": "d14d5c8e-45fd-4a30-a45d-4c49d8db8069",
+                "owner": {
+                    "id": "PA-633-616",
+                    "name": "Telefonica",
+                    "icon": "/media/PA-633-616/media/icon_CZ7w6DY.png"
+                },
+                "scopes": [
+                    "tier1",
+                    "tier2"
+                ],
+                "hub": {
+                    "id": "HB-2747-1221",
+                    "name": "Integration HUB"
+                },
+                "events": {
+                    "created": {
+                        "at": "2018-10-05T10:41:12+00:00",
+                        "by": {
+                            "id": "SU-339-207-107",
+                            "name": "HB-2747-1221"
+                        }
+                    },
+                    "updated": {
+                        "at": "2019-10-24T11:06:04+00:00",
+                        "by": {
+                            "id": "SU-529-580-056",
+                            "name": "PLM API"
+                        }
+                    }
+                },
+                "environment": "test",
+                "contact_info": {
+                    "address_line1": "Distrito Telefónica",
+                    "address_line2": "Ronda de la Comunicación, s/n",
+                    "city": "Madrid",
+                    "state": "Madrid",
+                    "postal_code": "28050",
+                    "country": "es",
+                    "contact": {
+                        "first_name": "CSB",
+                        "last_name": "Password Resets",
+                        "email": "noreply@dev.csbtest.telefonica.com",
+                        "phone_number": {
+                            "country_code": "+44",
+                            "area_code": "7447",
+                            "phone_number": "274385",
+                            "extension": ""
+                        }
+                    }
+                }
+            }
+        },
+        "pending_request": {
+            "id": "PR-108-749-230-0-002",
+            "type": "suspend",
+            "status": "pending",
+            "template": {
+                "id": "TL-178-198-490",
+                "name": "Default Subscription Pending Template"
+            }
+        },
+        "marketplace": {
+            "id": "MP-00000",
+            "name": "None"
+        },
+        "contract": {
+            "id": "CRD-00000-00000-00000",
+            "name": "None"
+        },
+        "configuration": {
+            "params": []
+        }
+    },
+    "reason": "",
+    "status": "pending",
+    "created": "2022-03-03T02:11:45+00:00",
+    "updated": "2022-03-03T02:11:45+00:00",
+    "answered": false,
+    "assignee": "",
+    "activation_key": "Please wait while your request is being fulfilled.",
+    "template": {
+        "id": "TL-178-198-490",
+        "name": "Default Subscription Pending Template",
+        "message": "Please wait while your request is being fulfilled."
+    },
+    "marketplace": {
+        "id": "MP-00000",
+        "name": "None"
+    },
+    "contract": {
+        "id": "CRD-00000-00000-00000",
+        "name": "None"
+    },
+    "previous_approved_request": {
+        "id": "PR-2413-2373-5718-001"
+    },
+    "effective_date": null,
+    "planned_date": null,
+    "events": {
+        "created": {
+            "at": "2022-03-03T02:11:45+00:00"
+        },
+        "updated": {
+            "at": "2022-03-03T02:11:45+00:00"
+        }
+    }
+}, {
+    "id": "PR-815-148-136-6-002",
+    "type": "suspend",
+    "note": "",
+    "asset": {
+        "id": "AS-815-148-136-6",
+        "status": "active",
+        "external_id": "10008105",
+        "external_uid": "cccb2941-4670-466d-8635-0503538070e5",
+        "product": {
+            "id": "PRD-136-884-767",
+            "icon": "/media/VA-209-443/PRD-136-884-767/media/PRD-136-884-767-logo.png",
+            "name": "APS PPU Test",
+            "status": "published"
+        },
+        "connection": {
+            "id": "CT-2955-7645",
+            "type": "test",
+            "status": "approved",
+            "provider": {
+                "id": "PA-633-616",
+                "name": "Telefonica",
+                "icon": "/media/PA-633-616/media/icon_CZ7w6DY.png"
+            },
+            "vendor": {
+                "id": "VA-209-443",
+                "name": "Telefonica Vendor"
+            },
+            "hub": {
+                "id": "HB-2747-1221",
+                "name": "Integration HUB"
+            },
+            "created_at": "2019-04-29T21:41:34+00:00"
+        },
+        "events": {
+            "created": {
+                "at": "2019-10-02T08:22:33+00:00"
+            },
+            "updated": {
+                "at": "2020-03-01T02:15:25+00:00"
+            }
+        },
+        "items": [{
+                "id": "MPN_PPU",
+                "global_id": "PRD-136-884-767-0001",
+                "mpn": "MPN-PPU",
+                "old_quantity": "unlimited",
+                "quantity": "unlimited",
+                "type": "Unit*H",
+                "display_name": "PPU",
+                "period": "Monthly",
+                "item_type": "PPU"
+            }, {
+                "id": "PRD_136_884_767_0002",
+                "global_id": "PRD-136-884-767-0002",
+                "mpn": "",
+                "old_quantity": "1",
+                "quantity": "1",
+                "type": "reservation",
+                "display_name": "Prd 136 884 767 0002",
+                "period": "Monthly",
+                "item_type": "Reservation"
+            }
+        ],
+        "params": [{
+                "id": "CUIT",
+                "name": "CUIT",
+                "type": "text",
+                "phase": "ordering",
+                "description": "CUIT",
+                "value": "",
+                "value_error": "",
+                "title": "CUIT",
+                "constraints": {
+                    "required": true,
+                    "meta": {},
+                    "hidden": false,
+                    "readonly": false
+                }
+            }, {
+                "id": "accountID",
+                "name": "accountID",
+                "type": "text",
+                "phase": "fulfillment",
+                "description": "Account ID",
+                "value": "317635",
+                "value_error": "",
+                "title": "Title of the Parameter account ID",
+                "constraints": {
+                    "meta": {},
+                    "required": true,
+                    "hidden": false,
+                    "readonly": false
+                }
+            }, {
+                "id": "email",
+                "name": "email",
+                "type": "text",
+                "phase": "ordering",
+                "description": "email",
+                "value": "",
+                "value_error": "",
+                "title": "email",
+                "constraints": {
+                    "required": false,
+                    "meta": {},
+                    "hidden": false,
+                    "readonly": false
+                }
+            }
+        ],
+        "tiers": {
+            "customer": {
+                "id": "TA-0-5698-3877-0546",
+                "version": 1,
+                "name": "QADEVNER27091025",
+                "type": "customer",
+                "db": "US",
+                "external_id": "1043288",
+                "external_uid": "a5a098c7-913b-4d6e-874f-048f98b2c06a",
+                "owner": {
+                    "id": "PA-633-616",
+                    "name": "Telefonica",
+                    "icon": "/media/PA-633-616/media/icon_CZ7w6DY.png"
+                },
+                "scopes": [
+                    "customer"
+                ],
+                "hub": {
+                    "id": "HB-2747-1221",
+                    "name": "Integration HUB"
+                },
+                "events": {
+                    "created": {
+                        "at": "2019-09-27T08:27:26+00:00"
+                    },
+                    "updated": {
+                        "at": "2019-10-14T08:03:23+00:00"
+                    }
+                },
+                "environment": "test",
+                "contact_info": {
+                    "address_line1": "Av. Mariscal La Mar 918",
+                    "address_line2": null,
+                    "city": "Buenos Aires",
+                    "state": null,
+                    "postal_code": "B1827",
+                    "country": "ar",
+                    "contact": {
+                        "first_name": "QADEVNER27091025",
+                        "last_name": "TELF",
+                        "email": "QADEVNER27091025@yopmail.com",
+                        "phone_number": {
+                            "country_code": "+00",
+                            "area_code": "51",
+                            "phone_number": "12345678",
+                            "extension": ""
+                        }
+                    }
+                }
+            },
+            "tier1": {
+                "id": "TA-0-2372-3440-5680",
+                "version": 78,
+                "name": "Movistar Demo",
+                "type": "reseller",
+                "db": "EU",
+                "external_id": "1000180",
+                "external_uid": "db27abd8-2b2a-49af-9a08-5d9362f015e4",
+                "parent": {
+                    "id": "TA-0-1665-7272-8763",
+                    "name": "Telefónica Digital INT",
+                    "external_id": "1"
+                },
+                "owner": {
+                    "id": "PA-633-616",
+                    "name": "Telefonica",
+                    "icon": "/media/PA-633-616/media/icon_CZ7w6DY.png"
+                },
+                "scopes": [
+                    "tier1"
+                ],
+                "hub": {
+                    "id": "HB-2747-1221",
+                    "name": "Integration HUB"
+                },
+                "events": {
+                    "created": {
+                        "at": "2019-01-25T15:28:16+00:00",
+                        "by": {
+                            "id": "SU-339-207-107",
+                            "name": "HB-2747-1221"
+                        }
+                    },
+                    "updated": {
+                        "at": "2019-10-14T08:03:23+00:00",
+                        "by": {
+                            "id": "SU-339-207-107",
+                            "name": "HB-2747-1221"
+                        }
+                    }
+                },
+                "environment": "test",
+                "contact_info": {
+                    "address_line1": "Gardoki 1",
+                    "address_line2": "",
+                    "city": "Bilbao",
+                    "state": "",
+                    "postal_code": "48008",
+                    "country": "es",
+                    "contact": {
+                        "first_name": "Alicia",
+                        "last_name": "Florrick",
+                        "email": "eli.gold@yopmail.com",
+                        "phone_number": {
+                            "country_code": "+34",
+                            "area_code": "",
+                            "phone_number": "45600600",
+                            "extension": "3200"
+                        }
+                    }
+                }
+            },
+            "tier2": {
+                "id": "TA-0-1665-7272-8763",
+                "version": 3194,
+                "name": "Telefónica Digital INT",
+                "type": "reseller",
+                "db": "EU",
+                "external_id": "1",
+                "external_uid": "d14d5c8e-45fd-4a30-a45d-4c49d8db8069",
+                "owner": {
+                    "id": "PA-633-616",
+                    "name": "Telefonica",
+                    "icon": "/media/PA-633-616/media/icon_CZ7w6DY.png"
+                },
+                "scopes": [
+                    "tier1",
+                    "tier2"
+                ],
+                "hub": {
+                    "id": "HB-2747-1221",
+                    "name": "Integration HUB"
+                },
+                "events": {
+                    "created": {
+                        "at": "2018-10-05T10:41:12+00:00",
+                        "by": {
+                            "id": "SU-339-207-107",
+                            "name": "HB-2747-1221"
+                        }
+                    },
+                    "updated": {
+                        "at": "2019-10-24T11:06:04+00:00",
+                        "by": {
+                            "id": "SU-529-580-056",
+                            "name": "PLM API"
+                        }
+                    }
+                },
+                "environment": "test",
+                "contact_info": {
+                    "address_line1": "Distrito Telefónica",
+                    "address_line2": "Ronda de la Comunicación, s/n",
+                    "city": "Madrid",
+                    "state": "Madrid",
+                    "postal_code": "28050",
+                    "country": "es",
+                    "contact": {
+                        "first_name": "CSB",
+                        "last_name": "Password Resets",
+                        "email": "noreply@dev.csbtest.telefonica.com",
+                        "phone_number": {
+                            "country_code": "+44",
+                            "area_code": "7447",
+                            "phone_number": "274385",
+                            "extension": ""
+                        }
+                    }
+                }
+            }
+        },
+        "pending_request": {
+            "id": "PR-815-148-136-6-002",
+            "type": "suspend",
+            "status": "pending",
+            "template": {
+                "id": "TL-178-198-490",
+                "name": "Default Subscription Pending Template"
+            }
+        },
+        "marketplace": {
+            "id": "MP-00000",
+            "name": "None"
+        },
+        "contract": {
+            "id": "CRD-00000-00000-00000",
+            "name": "None"
+        },
+        "configuration": {
+            "params": []
+        }
+    },
+    "reason": "",
+    "status": "pending",
+    "created": "2022-03-03T02:11:46+00:00",
+    "updated": "2022-03-03T02:11:46+00:00",
+    "answered": false,
+    "assignee": "",
+    "activation_key": "Please wait while your request is being fulfilled.",
+    "template": {
+        "id": "TL-178-198-490",
+        "name": "Default Subscription Pending Template",
+        "message": "Please wait while your request is being fulfilled."
+    },
+    "marketplace": {
+        "id": "MP-00000",
+        "name": "None"
+    },
+    "contract": {
+        "id": "CRD-00000-00000-00000",
+        "name": "None"
+    },
+    "previous_approved_request": {
+        "id": "PR-9906-5670-9633-001"
+    },
+    "effective_date": null,
+    "planned_date": null,
+    "events": {
+        "created": {
+            "at": "2022-03-03T02:11:46+00:00"
+        },
+        "updated": {
+            "at": "2022-03-03T02:11:46+00:00"
+        }
+    }
+}, {
+    "id": "PR-371-847-447-5-002",
+    "type": "suspend",
+    "note": "",
+    "asset": {
+        "id": "AS-371-847-447-5",
+        "status": "active",
+        "external_id": "10008107",
+        "external_uid": "07d62cd2-77d3-4c61-9014-c2afdfb41db0",
+        "product": {
+            "id": "PRD-136-884-767",
+            "icon": "/media/VA-209-443/PRD-136-884-767/media/PRD-136-884-767-logo.png",
+            "name": "APS PPU Test",
+            "status": "published"
+        },
+        "connection": {
+            "id": "CT-2955-7645",
+            "type": "test",
+            "status": "approved",
+            "provider": {
+                "id": "PA-633-616",
+                "name": "Telefonica",
+                "icon": "/media/PA-633-616/media/icon_CZ7w6DY.png"
+            },
+            "vendor": {
+                "id": "VA-209-443",
+                "name": "Telefonica Vendor"
+            },
+            "hub": {
+                "id": "HB-2747-1221",
+                "name": "Integration HUB"
+            },
+            "created_at": "2019-04-29T21:41:34+00:00"
+        },
+        "events": {
+            "created": {
+                "at": "2019-10-02T10:06:52+00:00"
+            },
+            "updated": {
+                "at": "2020-03-01T02:14:47+00:00"
+            }
+        },
+        "items": [{
+                "id": "MPN_PPU",
+                "global_id": "PRD-136-884-767-0001",
+                "mpn": "MPN-PPU",
+                "old_quantity": "unlimited",
+                "quantity": "unlimited",
+                "type": "Unit*H",
+                "display_name": "PPU",
+                "period": "Monthly",
+                "item_type": "PPU"
+            }, {
+                "id": "PRD_136_884_767_0002",
+                "global_id": "PRD-136-884-767-0002",
+                "mpn": "",
+                "old_quantity": "1",
+                "quantity": "1",
+                "type": "reservation",
+                "display_name": "Prd 136 884 767 0002",
+                "period": "Monthly",
+                "item_type": "Reservation"
+            }
+        ],
+        "params": [{
+                "id": "CUIT",
+                "name": "CUIT",
+                "type": "text",
+                "phase": "ordering",
+                "description": "CUIT",
+                "value": "",
+                "value_error": "",
+                "title": "CUIT",
+                "constraints": {
+                    "required": true,
+                    "meta": {},
+                    "hidden": false,
+                    "readonly": false
+                }
+            }, {
+                "id": "accountID",
+                "name": "accountID",
+                "type": "text",
+                "phase": "fulfillment",
+                "description": "Account ID",
+                "value": "242934",
+                "value_error": "",
+                "title": "Title of the Parameter account ID",
+                "constraints": {
+                    "meta": {},
+                    "required": true,
+                    "hidden": false,
+                    "readonly": false
+                }
+            }, {
+                "id": "email",
+                "name": "email",
+                "type": "text",
+                "phase": "ordering",
+                "description": "email",
+                "value": "",
+                "value_error": "",
+                "title": "email",
+                "constraints": {
+                    "required": false,
+                    "meta": {},
+                    "hidden": false,
+                    "readonly": false
+                }
+            }
+        ],
+        "tiers": {
+            "customer": {
+                "id": "TA-0-5698-3877-0546",
+                "version": 1,
+                "name": "QADEVNER27091025",
+                "type": "customer",
+                "db": "US",
+                "external_id": "1043288",
+                "external_uid": "a5a098c7-913b-4d6e-874f-048f98b2c06a",
+                "owner": {
+                    "id": "PA-633-616",
+                    "name": "Telefonica",
+                    "icon": "/media/PA-633-616/media/icon_CZ7w6DY.png"
+                },
+                "scopes": [
+                    "customer"
+                ],
+                "hub": {
+                    "id": "HB-2747-1221",
+                    "name": "Integration HUB"
+                },
+                "events": {
+                    "created": {
+                        "at": "2019-09-27T08:27:26+00:00"
+                    },
+                    "updated": {
+                        "at": "2019-10-14T08:03:23+00:00"
+                    }
+                },
+                "environment": "test",
+                "contact_info": {
+                    "address_line1": "Av. Mariscal La Mar 918",
+                    "address_line2": null,
+                    "city": "Buenos Aires",
+                    "state": null,
+                    "postal_code": "B1827",
+                    "country": "ar",
+                    "contact": {
+                        "first_name": "QADEVNER27091025",
+                        "last_name": "TELF",
+                        "email": "QADEVNER27091025@yopmail.com",
+                        "phone_number": {
+                            "country_code": "+00",
+                            "area_code": "51",
+                            "phone_number": "12345678",
+                            "extension": ""
+                        }
+                    }
+                }
+            },
+            "tier1": {
+                "id": "TA-0-2372-3440-5680",
+                "version": 78,
+                "name": "Movistar Demo",
+                "type": "reseller",
+                "db": "EU",
+                "external_id": "1000180",
+                "external_uid": "db27abd8-2b2a-49af-9a08-5d9362f015e4",
+                "parent": {
+                    "id": "TA-0-1665-7272-8763",
+                    "name": "Telefónica Digital INT",
+                    "external_id": "1"
+                },
+                "owner": {
+                    "id": "PA-633-616",
+                    "name": "Telefonica",
+                    "icon": "/media/PA-633-616/media/icon_CZ7w6DY.png"
+                },
+                "scopes": [
+                    "tier1"
+                ],
+                "hub": {
+                    "id": "HB-2747-1221",
+                    "name": "Integration HUB"
+                },
+                "events": {
+                    "created": {
+                        "at": "2019-01-25T15:28:16+00:00",
+                        "by": {
+                            "id": "SU-339-207-107",
+                            "name": "HB-2747-1221"
+                        }
+                    },
+                    "updated": {
+                        "at": "2019-10-14T08:03:23+00:00",
+                        "by": {
+                            "id": "SU-339-207-107",
+                            "name": "HB-2747-1221"
+                        }
+                    }
+                },
+                "environment": "test",
+                "contact_info": {
+                    "address_line1": "Gardoki 1",
+                    "address_line2": "",
+                    "city": "Bilbao",
+                    "state": "",
+                    "postal_code": "48008",
+                    "country": "es",
+                    "contact": {
+                        "first_name": "Alicia",
+                        "last_name": "Florrick",
+                        "email": "eli.gold@yopmail.com",
+                        "phone_number": {
+                            "country_code": "+34",
+                            "area_code": "",
+                            "phone_number": "45600600",
+                            "extension": "3200"
+                        }
+                    }
+                }
+            },
+            "tier2": {
+                "id": "TA-0-1665-7272-8763",
+                "version": 3194,
+                "name": "Telefónica Digital INT",
+                "type": "reseller",
+                "db": "EU",
+                "external_id": "1",
+                "external_uid": "d14d5c8e-45fd-4a30-a45d-4c49d8db8069",
+                "owner": {
+                    "id": "PA-633-616",
+                    "name": "Telefonica",
+                    "icon": "/media/PA-633-616/media/icon_CZ7w6DY.png"
+                },
+                "scopes": [
+                    "tier1",
+                    "tier2"
+                ],
+                "hub": {
+                    "id": "HB-2747-1221",
+                    "name": "Integration HUB"
+                },
+                "events": {
+                    "created": {
+                        "at": "2018-10-05T10:41:12+00:00",
+                        "by": {
+                            "id": "SU-339-207-107",
+                            "name": "HB-2747-1221"
+                        }
+                    },
+                    "updated": {
+                        "at": "2019-10-24T11:06:04+00:00",
+                        "by": {
+                            "id": "SU-529-580-056",
+                            "name": "PLM API"
+                        }
+                    }
+                },
+                "environment": "test",
+                "contact_info": {
+                    "address_line1": "Distrito Telefónica",
+                    "address_line2": "Ronda de la Comunicación, s/n",
+                    "city": "Madrid",
+                    "state": "Madrid",
+                    "postal_code": "28050",
+                    "country": "es",
+                    "contact": {
+                        "first_name": "CSB",
+                        "last_name": "Password Resets",
+                        "email": "noreply@dev.csbtest.telefonica.com",
+                        "phone_number": {
+                            "country_code": "+44",
+                            "area_code": "7447",
+                            "phone_number": "274385",
+                            "extension": ""
+                        }
+                    }
+                }
+            }
+        },
+        "pending_request": {
+            "id": "PR-371-847-447-5-002",
+            "type": "suspend",
+            "status": "pending",
+            "template": {
+                "id": "TL-178-198-490",
+                "name": "Default Subscription Pending Template"
+            }
+        },
+        "marketplace": {
+            "id": "MP-00000",
+            "name": "None"
+        },
+        "contract": {
+            "id": "CRD-00000-00000-00000",
+            "name": "None"
+        },
+        "configuration": {
+            "params": []
+        }
+    },
+    "reason": "",
+    "status": "pending",
+    "created": "2022-03-03T02:11:47+00:00",
+    "updated": "2022-03-03T02:11:47+00:00",
+    "answered": false,
+    "assignee": "",
+    "activation_key": "Please wait while your request is being fulfilled.",
+    "template": {
+        "id": "TL-178-198-490",
+        "name": "Default Subscription Pending Template",
+        "message": "Please wait while your request is being fulfilled."
+    },
+    "marketplace": {
+        "id": "MP-00000",
+        "name": "None"
+    },
+    "contract": {
+        "id": "CRD-00000-00000-00000",
+        "name": "None"
+    },
+    "previous_approved_request": {
+        "id": "PR-2804-0819-6599-001"
+    },
+    "effective_date": null,
+    "planned_date": null,
+    "events": {
+        "created": {
+            "at": "2022-03-03T02:11:47+00:00"
+        },
+        "updated": {
+            "at": "2022-03-03T02:11:47+00:00"
+        }
+    }
+}, {
+    "id": "PR-453-795-873-9-002",
+    "type": "suspend",
+    "note": "",
+    "asset": {
+        "id": "AS-453-795-873-9",
+        "status": "active",
+        "external_id": "10008106",
+        "external_uid": "79cb89f1-9bd9-4882-823c-2997d4857e53",
+        "product": {
+            "id": "PRD-136-884-767",
+            "icon": "/media/VA-209-443/PRD-136-884-767/media/PRD-136-884-767-logo.png",
+            "name": "APS PPU Test",
+            "status": "published"
+        },
+        "connection": {
+            "id": "CT-2955-7645",
+            "type": "test",
+            "status": "approved",
+            "provider": {
+                "id": "PA-633-616",
+                "name": "Telefonica",
+                "icon": "/media/PA-633-616/media/icon_CZ7w6DY.png"
+            },
+            "vendor": {
+                "id": "VA-209-443",
+                "name": "Telefonica Vendor"
+            },
+            "hub": {
+                "id": "HB-2747-1221",
+                "name": "Integration HUB"
+            },
+            "created_at": "2019-04-29T21:41:34+00:00"
+        },
+        "events": {
+            "created": {
+                "at": "2019-10-02T08:23:00+00:00"
+            },
+            "updated": {
+                "at": "2020-03-01T02:15:25+00:00"
+            }
+        },
+        "items": [{
+                "id": "MPN_PPU",
+                "global_id": "PRD-136-884-767-0001",
+                "mpn": "MPN-PPU",
+                "old_quantity": "unlimited",
+                "quantity": "unlimited",
+                "type": "Unit*H",
+                "display_name": "PPU",
+                "period": "Monthly",
+                "item_type": "PPU"
+            }, {
+                "id": "PRD_136_884_767_0002",
+                "global_id": "PRD-136-884-767-0002",
+                "mpn": "",
+                "old_quantity": "1",
+                "quantity": "1",
+                "type": "reservation",
+                "display_name": "Prd 136 884 767 0002",
+                "period": "Monthly",
+                "item_type": "Reservation"
+            }
+        ],
+        "params": [{
+                "id": "CUIT",
+                "name": "CUIT",
+                "type": "text",
+                "phase": "ordering",
+                "description": "CUIT",
+                "value": "",
+                "value_error": "",
+                "title": "CUIT",
+                "constraints": {
+                    "required": true,
+                    "meta": {},
+                    "hidden": false,
+                    "readonly": false
+                }
+            }, {
+                "id": "accountID",
+                "name": "accountID",
+                "type": "text",
+                "phase": "fulfillment",
+                "description": "Account ID",
+                "value": "108327",
+                "value_error": "",
+                "title": "Title of the Parameter account ID",
+                "constraints": {
+                    "meta": {},
+                    "required": true,
+                    "hidden": false,
+                    "readonly": false
+                }
+            }, {
+                "id": "email",
+                "name": "email",
+                "type": "text",
+                "phase": "ordering",
+                "description": "email",
+                "value": "",
+                "value_error": "",
+                "title": "email",
+                "constraints": {
+                    "required": false,
+                    "meta": {},
+                    "hidden": false,
+                    "readonly": false
+                }
+            }
+        ],
+        "tiers": {
+            "customer": {
+                "id": "TA-0-5698-3877-0546",
+                "version": 1,
+                "name": "QADEVNER27091025",
+                "type": "customer",
+                "db": "US",
+                "external_id": "1043288",
+                "external_uid": "a5a098c7-913b-4d6e-874f-048f98b2c06a",
+                "owner": {
+                    "id": "PA-633-616",
+                    "name": "Telefonica",
+                    "icon": "/media/PA-633-616/media/icon_CZ7w6DY.png"
+                },
+                "scopes": [
+                    "customer"
+                ],
+                "hub": {
+                    "id": "HB-2747-1221",
+                    "name": "Integration HUB"
+                },
+                "events": {
+                    "created": {
+                        "at": "2019-09-27T08:27:26+00:00"
+                    },
+                    "updated": {
+                        "at": "2019-10-14T08:03:23+00:00"
+                    }
+                },
+                "environment": "test",
+                "contact_info": {
+                    "address_line1": "Av. Mariscal La Mar 918",
+                    "address_line2": null,
+                    "city": "Buenos Aires",
+                    "state": null,
+                    "postal_code": "B1827",
+                    "country": "ar",
+                    "contact": {
+                        "first_name": "QADEVNER27091025",
+                        "last_name": "TELF",
+                        "email": "QADEVNER27091025@yopmail.com",
+                        "phone_number": {
+                            "country_code": "+00",
+                            "area_code": "51",
+                            "phone_number": "12345678",
+                            "extension": ""
+                        }
+                    }
+                }
+            },
+            "tier1": {
+                "id": "TA-0-2372-3440-5680",
+                "version": 78,
+                "name": "Movistar Demo",
+                "type": "reseller",
+                "db": "EU",
+                "external_id": "1000180",
+                "external_uid": "db27abd8-2b2a-49af-9a08-5d9362f015e4",
+                "parent": {
+                    "id": "TA-0-1665-7272-8763",
+                    "name": "Telefónica Digital INT",
+                    "external_id": "1"
+                },
+                "owner": {
+                    "id": "PA-633-616",
+                    "name": "Telefonica",
+                    "icon": "/media/PA-633-616/media/icon_CZ7w6DY.png"
+                },
+                "scopes": [
+                    "tier1"
+                ],
+                "hub": {
+                    "id": "HB-2747-1221",
+                    "name": "Integration HUB"
+                },
+                "events": {
+                    "created": {
+                        "at": "2019-01-25T15:28:16+00:00",
+                        "by": {
+                            "id": "SU-339-207-107",
+                            "name": "HB-2747-1221"
+                        }
+                    },
+                    "updated": {
+                        "at": "2019-10-14T08:03:23+00:00",
+                        "by": {
+                            "id": "SU-339-207-107",
+                            "name": "HB-2747-1221"
+                        }
+                    }
+                },
+                "environment": "test",
+                "contact_info": {
+                    "address_line1": "Gardoki 1",
+                    "address_line2": "",
+                    "city": "Bilbao",
+                    "state": "",
+                    "postal_code": "48008",
+                    "country": "es",
+                    "contact": {
+                        "first_name": "Alicia",
+                        "last_name": "Florrick",
+                        "email": "eli.gold@yopmail.com",
+                        "phone_number": {
+                            "country_code": "+34",
+                            "area_code": "",
+                            "phone_number": "45600600",
+                            "extension": "3200"
+                        }
+                    }
+                }
+            },
+            "tier2": {
+                "id": "TA-0-1665-7272-8763",
+                "version": 3194,
+                "name": "Telefónica Digital INT",
+                "type": "reseller",
+                "db": "EU",
+                "external_id": "1",
+                "external_uid": "d14d5c8e-45fd-4a30-a45d-4c49d8db8069",
+                "owner": {
+                    "id": "PA-633-616",
+                    "name": "Telefonica",
+                    "icon": "/media/PA-633-616/media/icon_CZ7w6DY.png"
+                },
+                "scopes": [
+                    "tier1",
+                    "tier2"
+                ],
+                "hub": {
+                    "id": "HB-2747-1221",
+                    "name": "Integration HUB"
+                },
+                "events": {
+                    "created": {
+                        "at": "2018-10-05T10:41:12+00:00",
+                        "by": {
+                            "id": "SU-339-207-107",
+                            "name": "HB-2747-1221"
+                        }
+                    },
+                    "updated": {
+                        "at": "2019-10-24T11:06:04+00:00",
+                        "by": {
+                            "id": "SU-529-580-056",
+                            "name": "PLM API"
+                        }
+                    }
+                },
+                "environment": "test",
+                "contact_info": {
+                    "address_line1": "Distrito Telefónica",
+                    "address_line2": "Ronda de la Comunicación, s/n",
+                    "city": "Madrid",
+                    "state": "Madrid",
+                    "postal_code": "28050",
+                    "country": "es",
+                    "contact": {
+                        "first_name": "CSB",
+                        "last_name": "Password Resets",
+                        "email": "noreply@dev.csbtest.telefonica.com",
+                        "phone_number": {
+                            "country_code": "+44",
+                            "area_code": "7447",
+                            "phone_number": "274385",
+                            "extension": ""
+                        }
+                    }
+                }
+            }
+        },
+        "pending_request": {
+            "id": "PR-453-795-873-9-002",
+            "type": "suspend",
+            "status": "pending",
+            "template": {
+                "id": "TL-178-198-490",
+                "name": "Default Subscription Pending Template"
+            }
+        },
+        "marketplace": {
+            "id": "MP-00000",
+            "name": "None"
+        },
+        "contract": {
+            "id": "CRD-00000-00000-00000",
+            "name": "None"
+        },
+        "configuration": {
+            "params": []
+        }
+    },
+    "reason": "",
+    "status": "pending",
+    "created": "2022-03-03T02:11:47+00:00",
+    "updated": "2022-03-03T02:11:47+00:00",
+    "answered": false,
+    "assignee": "",
+    "activation_key": "Please wait while your request is being fulfilled.",
+    "template": {
+        "id": "TL-178-198-490",
+        "name": "Default Subscription Pending Template",
+        "message": "Please wait while your request is being fulfilled."
+    },
+    "marketplace": {
+        "id": "MP-00000",
+        "name": "None"
+    },
+    "contract": {
+        "id": "CRD-00000-00000-00000",
+        "name": "None"
+    },
+    "previous_approved_request": {
+        "id": "PR-8227-9675-8146-001"
+    },
+    "effective_date": null,
+    "planned_date": null,
+    "events": {
+        "created": {
+            "at": "2022-03-03T02:11:47+00:00"
+        },
+        "updated": {
+            "at": "2022-03-03T02:11:47+00:00"
+        }
+    }
+}, {
+    "id": "PR-211-301-727-0-002",
+    "type": "suspend",
+    "note": "",
+    "asset": {
+        "id": "AS-211-301-727-0",
+        "status": "active",
+        "external_id": "10008118",
+        "external_uid": "f87f9b73-4f79-4538-b271-707421256a1d",
+        "product": {
+            "id": "PRD-136-884-767",
+            "icon": "/media/VA-209-443/PRD-136-884-767/media/PRD-136-884-767-logo.png",
+            "name": "APS PPU Test",
+            "status": "published"
+        },
+        "connection": {
+            "id": "CT-2955-7645",
+            "type": "test",
+            "status": "approved",
+            "provider": {
+                "id": "PA-633-616",
+                "name": "Telefonica",
+                "icon": "/media/PA-633-616/media/icon_CZ7w6DY.png"
+            },
+            "vendor": {
+                "id": "VA-209-443",
+                "name": "Telefonica Vendor"
+            },
+            "hub": {
+                "id": "HB-2747-1221",
+                "name": "Integration HUB"
+            },
+            "created_at": "2019-04-29T21:41:34+00:00"
+        },
+        "events": {
+            "created": {
+                "at": "2019-10-02T11:45:44+00:00"
+            },
+            "updated": {
+                "at": "2020-03-01T02:15:28+00:00"
+            }
+        },
+        "items": [{
+                "id": "MPN_PPU",
+                "global_id": "PRD-136-884-767-0001",
+                "mpn": "MPN-PPU",
+                "old_quantity": "unlimited",
+                "quantity": "unlimited",
+                "type": "Unit*H",
+                "display_name": "PPU",
+                "period": "Monthly",
+                "item_type": "PPU"
+            }, {
+                "id": "PRD_136_884_767_0002",
+                "global_id": "PRD-136-884-767-0002",
+                "mpn": "",
+                "old_quantity": "1",
+                "quantity": "1",
+                "type": "reservation",
+                "display_name": "Prd 136 884 767 0002",
+                "period": "Monthly",
+                "item_type": "Reservation"
+            }
+        ],
+        "params": [{
+                "id": "CUIT",
+                "name": "CUIT",
+                "type": "text",
+                "phase": "ordering",
+                "description": "CUIT",
+                "value": "",
+                "value_error": "",
+                "title": "CUIT",
+                "constraints": {
+                    "required": true,
+                    "meta": {},
+                    "hidden": false,
+                    "readonly": false
+                }
+            }, {
+                "id": "accountID",
+                "name": "accountID",
+                "type": "text",
+                "phase": "fulfillment",
+                "description": "Account ID",
+                "value": "676285",
+                "value_error": "",
+                "title": "Title of the Parameter account ID",
+                "constraints": {
+                    "meta": {},
+                    "required": true,
+                    "hidden": false,
+                    "readonly": false
+                }
+            }, {
+                "id": "email",
+                "name": "email",
+                "type": "text",
+                "phase": "ordering",
+                "description": "email",
+                "value": "",
+                "value_error": "",
+                "title": "email",
+                "constraints": {
+                    "required": false,
+                    "meta": {},
+                    "hidden": false,
+                    "readonly": false
+                }
+            }
+        ],
+        "tiers": {
+            "customer": {
+                "id": "TA-0-5698-3877-0546",
+                "version": 1,
+                "name": "QADEVNER27091025",
+                "type": "customer",
+                "db": "US",
+                "external_id": "1043288",
+                "external_uid": "a5a098c7-913b-4d6e-874f-048f98b2c06a",
+                "owner": {
+                    "id": "PA-633-616",
+                    "name": "Telefonica",
+                    "icon": "/media/PA-633-616/media/icon_CZ7w6DY.png"
+                },
+                "scopes": [
+                    "customer"
+                ],
+                "hub": {
+                    "id": "HB-2747-1221",
+                    "name": "Integration HUB"
+                },
+                "events": {
+                    "created": {
+                        "at": "2019-09-27T08:27:26+00:00"
+                    },
+                    "updated": {
+                        "at": "2019-10-14T08:03:23+00:00"
+                    }
+                },
+                "environment": "test",
+                "contact_info": {
+                    "address_line1": "Av. Mariscal La Mar 918",
+                    "address_line2": null,
+                    "city": "Buenos Aires",
+                    "state": null,
+                    "postal_code": "B1827",
+                    "country": "ar",
+                    "contact": {
+                        "first_name": "QADEVNER27091025",
+                        "last_name": "TELF",
+                        "email": "QADEVNER27091025@yopmail.com",
+                        "phone_number": {
+                            "country_code": "+00",
+                            "area_code": "51",
+                            "phone_number": "12345678",
+                            "extension": ""
+                        }
+                    }
+                }
+            },
+            "tier1": {
+                "id": "TA-0-2372-3440-5680",
+                "version": 78,
+                "name": "Movistar Demo",
+                "type": "reseller",
+                "db": "EU",
+                "external_id": "1000180",
+                "external_uid": "db27abd8-2b2a-49af-9a08-5d9362f015e4",
+                "parent": {
+                    "id": "TA-0-1665-7272-8763",
+                    "name": "Telefónica Digital INT",
+                    "external_id": "1"
+                },
+                "owner": {
+                    "id": "PA-633-616",
+                    "name": "Telefonica",
+                    "icon": "/media/PA-633-616/media/icon_CZ7w6DY.png"
+                },
+                "scopes": [
+                    "tier1"
+                ],
+                "hub": {
+                    "id": "HB-2747-1221",
+                    "name": "Integration HUB"
+                },
+                "events": {
+                    "created": {
+                        "at": "2019-01-25T15:28:16+00:00",
+                        "by": {
+                            "id": "SU-339-207-107",
+                            "name": "HB-2747-1221"
+                        }
+                    },
+                    "updated": {
+                        "at": "2019-10-14T08:03:23+00:00",
+                        "by": {
+                            "id": "SU-339-207-107",
+                            "name": "HB-2747-1221"
+                        }
+                    }
+                },
+                "environment": "test",
+                "contact_info": {
+                    "address_line1": "Gardoki 1",
+                    "address_line2": "",
+                    "city": "Bilbao",
+                    "state": "",
+                    "postal_code": "48008",
+                    "country": "es",
+                    "contact": {
+                        "first_name": "Alicia",
+                        "last_name": "Florrick",
+                        "email": "eli.gold@yopmail.com",
+                        "phone_number": {
+                            "country_code": "+34",
+                            "area_code": "",
+                            "phone_number": "45600600",
+                            "extension": "3200"
+                        }
+                    }
+                }
+            },
+            "tier2": {
+                "id": "TA-0-1665-7272-8763",
+                "version": 3194,
+                "name": "Telefónica Digital INT",
+                "type": "reseller",
+                "db": "EU",
+                "external_id": "1",
+                "external_uid": "d14d5c8e-45fd-4a30-a45d-4c49d8db8069",
+                "owner": {
+                    "id": "PA-633-616",
+                    "name": "Telefonica",
+                    "icon": "/media/PA-633-616/media/icon_CZ7w6DY.png"
+                },
+                "scopes": [
+                    "tier1",
+                    "tier2"
+                ],
+                "hub": {
+                    "id": "HB-2747-1221",
+                    "name": "Integration HUB"
+                },
+                "events": {
+                    "created": {
+                        "at": "2018-10-05T10:41:12+00:00",
+                        "by": {
+                            "id": "SU-339-207-107",
+                            "name": "HB-2747-1221"
+                        }
+                    },
+                    "updated": {
+                        "at": "2019-10-24T11:06:04+00:00",
+                        "by": {
+                            "id": "SU-529-580-056",
+                            "name": "PLM API"
+                        }
+                    }
+                },
+                "environment": "test",
+                "contact_info": {
+                    "address_line1": "Distrito Telefónica",
+                    "address_line2": "Ronda de la Comunicación, s/n",
+                    "city": "Madrid",
+                    "state": "Madrid",
+                    "postal_code": "28050",
+                    "country": "es",
+                    "contact": {
+                        "first_name": "CSB",
+                        "last_name": "Password Resets",
+                        "email": "noreply@dev.csbtest.telefonica.com",
+                        "phone_number": {
+                            "country_code": "+44",
+                            "area_code": "7447",
+                            "phone_number": "274385",
+                            "extension": ""
+                        }
+                    }
+                }
+            }
+        },
+        "pending_request": {
+            "id": "PR-211-301-727-0-002",
+            "type": "suspend",
+            "status": "pending",
+            "template": {
+                "id": "TL-178-198-490",
+                "name": "Default Subscription Pending Template"
+            }
+        },
+        "marketplace": {
+            "id": "MP-00000",
+            "name": "None"
+        },
+        "contract": {
+            "id": "CRD-00000-00000-00000",
+            "name": "None"
+        },
+        "configuration": {
+            "params": []
+        }
+    },
+    "reason": "",
+    "status": "pending",
+    "created": "2022-03-03T02:11:47+00:00",
+    "updated": "2022-03-03T02:11:47+00:00",
+    "answered": false,
+    "assignee": "",
+    "activation_key": "Please wait while your request is being fulfilled.",
+    "template": {
+        "id": "TL-178-198-490",
+        "name": "Default Subscription Pending Template",
+        "message": "Please wait while your request is being fulfilled."
+    },
+    "marketplace": {
+        "id": "MP-00000",
+        "name": "None"
+    },
+    "contract": {
+        "id": "CRD-00000-00000-00000",
+        "name": "None"
+    },
+    "previous_approved_request": {
+        "id": "PR-3246-9555-6693-001"
+    },
+    "effective_date": null,
+    "planned_date": null,
+    "events": {
+        "created": {
+            "at": "2022-03-03T02:11:47+00:00"
+        },
+        "updated": {
+            "at": "2022-03-03T02:11:47+00:00"
+        }
+    }
+}, {
+    "id": "PR-537-450-472-1-002",
+    "type": "suspend",
+    "note": "",
+    "asset": {
+        "id": "AS-537-450-472-1",
+        "status": "active",
+        "external_id": "10008120",
+        "external_uid": "d3d01939-b9b8-48f2-8ca2-1306e295e514",
+        "product": {
+            "id": "PRD-136-884-767",
+            "icon": "/media/VA-209-443/PRD-136-884-767/media/PRD-136-884-767-logo.png",
+            "name": "APS PPU Test",
+            "status": "published"
+        },
+        "connection": {
+            "id": "CT-2955-7645",
+            "type": "test",
+            "status": "approved",
+            "provider": {
+                "id": "PA-633-616",
+                "name": "Telefonica",
+                "icon": "/media/PA-633-616/media/icon_CZ7w6DY.png"
+            },
+            "vendor": {
+                "id": "VA-209-443",
+                "name": "Telefonica Vendor"
+            },
+            "hub": {
+                "id": "HB-2747-1221",
+                "name": "Integration HUB"
+            },
+            "created_at": "2019-04-29T21:41:34+00:00"
+        },
+        "events": {
+            "created": {
+                "at": "2019-10-02T12:24:37+00:00"
+            },
+            "updated": {
+                "at": "2020-03-01T02:15:32+00:00"
+            }
+        },
+        "items": [{
+                "id": "MPN_PPU",
+                "global_id": "PRD-136-884-767-0001",
+                "mpn": "MPN-PPU",
+                "old_quantity": "unlimited",
+                "quantity": "unlimited",
+                "type": "Unit*H",
+                "display_name": "PPU",
+                "period": "Monthly",
+                "item_type": "PPU"
+            }, {
+                "id": "PRD_136_884_767_0002",
+                "global_id": "PRD-136-884-767-0002",
+                "mpn": "",
+                "old_quantity": "1",
+                "quantity": "1",
+                "type": "reservation",
+                "display_name": "Prd 136 884 767 0002",
+                "period": "Monthly",
+                "item_type": "Reservation"
+            }
+        ],
+        "params": [{
+                "id": "CUIT",
+                "name": "CUIT",
+                "type": "text",
+                "phase": "ordering",
+                "description": "CUIT",
+                "value": "",
+                "value_error": "",
+                "title": "CUIT",
+                "constraints": {
+                    "required": true,
+                    "meta": {},
+                    "hidden": false,
+                    "readonly": false
+                }
+            }, {
+                "id": "accountID",
+                "name": "accountID",
+                "type": "text",
+                "phase": "fulfillment",
+                "description": "Account ID",
+                "value": "468237",
+                "value_error": "",
+                "title": "Title of the Parameter account ID",
+                "constraints": {
+                    "meta": {},
+                    "required": true,
+                    "hidden": false,
+                    "readonly": false
+                }
+            }, {
+                "id": "email",
+                "name": "email",
+                "type": "text",
+                "phase": "ordering",
+                "description": "email",
+                "value": "",
+                "value_error": "",
+                "title": "email",
+                "constraints": {
+                    "required": false,
+                    "meta": {},
+                    "hidden": false,
+                    "readonly": false
+                }
+            }
+        ],
+        "tiers": {
+            "customer": {
+                "id": "TA-0-5698-3877-0546",
+                "version": 1,
+                "name": "QADEVNER27091025",
+                "type": "customer",
+                "db": "US",
+                "external_id": "1043288",
+                "external_uid": "a5a098c7-913b-4d6e-874f-048f98b2c06a",
+                "owner": {
+                    "id": "PA-633-616",
+                    "name": "Telefonica",
+                    "icon": "/media/PA-633-616/media/icon_CZ7w6DY.png"
+                },
+                "scopes": [
+                    "customer"
+                ],
+                "hub": {
+                    "id": "HB-2747-1221",
+                    "name": "Integration HUB"
+                },
+                "events": {
+                    "created": {
+                        "at": "2019-09-27T08:27:26+00:00"
+                    },
+                    "updated": {
+                        "at": "2019-10-14T08:03:23+00:00"
+                    }
+                },
+                "environment": "test",
+                "contact_info": {
+                    "address_line1": "Av. Mariscal La Mar 918",
+                    "address_line2": null,
+                    "city": "Buenos Aires",
+                    "state": null,
+                    "postal_code": "B1827",
+                    "country": "ar",
+                    "contact": {
+                        "first_name": "QADEVNER27091025",
+                        "last_name": "TELF",
+                        "email": "QADEVNER27091025@yopmail.com",
+                        "phone_number": {
+                            "country_code": "+00",
+                            "area_code": "51",
+                            "phone_number": "12345678",
+                            "extension": ""
+                        }
+                    }
+                }
+            },
+            "tier1": {
+                "id": "TA-0-2372-3440-5680",
+                "version": 78,
+                "name": "Movistar Demo",
+                "type": "reseller",
+                "db": "EU",
+                "external_id": "1000180",
+                "external_uid": "db27abd8-2b2a-49af-9a08-5d9362f015e4",
+                "parent": {
+                    "id": "TA-0-1665-7272-8763",
+                    "name": "Telefónica Digital INT",
+                    "external_id": "1"
+                },
+                "owner": {
+                    "id": "PA-633-616",
+                    "name": "Telefonica",
+                    "icon": "/media/PA-633-616/media/icon_CZ7w6DY.png"
+                },
+                "scopes": [
+                    "tier1"
+                ],
+                "hub": {
+                    "id": "HB-2747-1221",
+                    "name": "Integration HUB"
+                },
+                "events": {
+                    "created": {
+                        "at": "2019-01-25T15:28:16+00:00",
+                        "by": {
+                            "id": "SU-339-207-107",
+                            "name": "HB-2747-1221"
+                        }
+                    },
+                    "updated": {
+                        "at": "2019-10-14T08:03:23+00:00",
+                        "by": {
+                            "id": "SU-339-207-107",
+                            "name": "HB-2747-1221"
+                        }
+                    }
+                },
+                "environment": "test",
+                "contact_info": {
+                    "address_line1": "Gardoki 1",
+                    "address_line2": "",
+                    "city": "Bilbao",
+                    "state": "",
+                    "postal_code": "48008",
+                    "country": "es",
+                    "contact": {
+                        "first_name": "Alicia",
+                        "last_name": "Florrick",
+                        "email": "eli.gold@yopmail.com",
+                        "phone_number": {
+                            "country_code": "+34",
+                            "area_code": "",
+                            "phone_number": "45600600",
+                            "extension": "3200"
+                        }
+                    }
+                }
+            },
+            "tier2": {
+                "id": "TA-0-1665-7272-8763",
+                "version": 3194,
+                "name": "Telefónica Digital INT",
+                "type": "reseller",
+                "db": "EU",
+                "external_id": "1",
+                "external_uid": "d14d5c8e-45fd-4a30-a45d-4c49d8db8069",
+                "owner": {
+                    "id": "PA-633-616",
+                    "name": "Telefonica",
+                    "icon": "/media/PA-633-616/media/icon_CZ7w6DY.png"
+                },
+                "scopes": [
+                    "tier1",
+                    "tier2"
+                ],
+                "hub": {
+                    "id": "HB-2747-1221",
+                    "name": "Integration HUB"
+                },
+                "events": {
+                    "created": {
+                        "at": "2018-10-05T10:41:12+00:00",
+                        "by": {
+                            "id": "SU-339-207-107",
+                            "name": "HB-2747-1221"
+                        }
+                    },
+                    "updated": {
+                        "at": "2019-10-24T11:06:04+00:00",
+                        "by": {
+                            "id": "SU-529-580-056",
+                            "name": "PLM API"
+                        }
+                    }
+                },
+                "environment": "test",
+                "contact_info": {
+                    "address_line1": "Distrito Telefónica",
+                    "address_line2": "Ronda de la Comunicación, s/n",
+                    "city": "Madrid",
+                    "state": "Madrid",
+                    "postal_code": "28050",
+                    "country": "es",
+                    "contact": {
+                        "first_name": "CSB",
+                        "last_name": "Password Resets",
+                        "email": "noreply@dev.csbtest.telefonica.com",
+                        "phone_number": {
+                            "country_code": "+44",
+                            "area_code": "7447",
+                            "phone_number": "274385",
+                            "extension": ""
+                        }
+                    }
+                }
+            }
+        },
+        "pending_request": {
+            "id": "PR-537-450-472-1-002",
+            "type": "suspend",
+            "status": "pending",
+            "template": {
+                "id": "TL-178-198-490",
+                "name": "Default Subscription Pending Template"
+            }
+        },
+        "marketplace": {
+            "id": "MP-00000",
+            "name": "None"
+        },
+        "contract": {
+            "id": "CRD-00000-00000-00000",
+            "name": "None"
+        },
+        "configuration": {
+            "params": []
+        }
+    },
+    "reason": "",
+    "status": "pending",
+    "created": "2022-03-03T02:11:47+00:00",
+    "updated": "2022-03-03T02:11:47+00:00",
+    "answered": false,
+    "assignee": "",
+    "activation_key": "Please wait while your request is being fulfilled.",
+    "template": {
+        "id": "TL-178-198-490",
+        "name": "Default Subscription Pending Template",
+        "message": "Please wait while your request is being fulfilled."
+    },
+    "marketplace": {
+        "id": "MP-00000",
+        "name": "None"
+    },
+    "contract": {
+        "id": "CRD-00000-00000-00000",
+        "name": "None"
+    },
+    "previous_approved_request": {
+        "id": "PR-0326-3529-9294-001"
+    },
+    "effective_date": null,
+    "planned_date": null,
+    "events": {
+        "created": {
+            "at": "2022-03-03T02:11:47+00:00"
+        },
+        "updated": {
+            "at": "2022-03-03T02:11:47+00:00"
+        }
+    }
+}, {
+    "id": "PR-315-224-374-9-002",
+    "type": "suspend",
+    "note": "",
+    "asset": {
+        "id": "AS-315-224-374-9",
+        "status": "active",
+        "external_id": "10008129",
+        "external_uid": "ecbc041f-02ca-41be-a565-199fdf7d6001",
+        "product": {
+            "id": "PRD-136-884-767",
+            "icon": "/media/VA-209-443/PRD-136-884-767/media/PRD-136-884-767-logo.png",
+            "name": "APS PPU Test",
+            "status": "published"
+        },
+        "connection": {
+            "id": "CT-2955-7645",
+            "type": "test",
+            "status": "approved",
+            "provider": {
+                "id": "PA-633-616",
+                "name": "Telefonica",
+                "icon": "/media/PA-633-616/media/icon_CZ7w6DY.png"
+            },
+            "vendor": {
+                "id": "VA-209-443",
+                "name": "Telefonica Vendor"
+            },
+            "hub": {
+                "id": "HB-2747-1221",
+                "name": "Integration HUB"
+            },
+            "created_at": "2019-04-29T21:41:34+00:00"
+        },
+        "events": {
+            "created": {
+                "at": "2019-10-02T12:47:31+00:00"
+            },
+            "updated": {
+                "at": "2020-03-01T02:15:29+00:00"
+            }
+        },
+        "items": [{
+                "id": "MPN_PPU",
+                "global_id": "PRD-136-884-767-0001",
+                "mpn": "MPN-PPU",
+                "old_quantity": "unlimited",
+                "quantity": "unlimited",
+                "type": "Unit*H",
+                "display_name": "PPU",
+                "period": "Monthly",
+                "item_type": "PPU"
+            }, {
+                "id": "PRD_136_884_767_0002",
+                "global_id": "PRD-136-884-767-0002",
+                "mpn": "",
+                "old_quantity": "1",
+                "quantity": "1",
+                "type": "reservation",
+                "display_name": "Prd 136 884 767 0002",
+                "period": "Monthly",
+                "item_type": "Reservation"
+            }
+        ],
+        "params": [{
+                "id": "CUIT",
+                "name": "CUIT",
+                "type": "text",
+                "phase": "ordering",
+                "description": "CUIT",
+                "value": "",
+                "value_error": "",
+                "title": "CUIT",
+                "constraints": {
+                    "required": true,
+                    "meta": {},
+                    "hidden": false,
+                    "readonly": false
+                }
+            }, {
+                "id": "accountID",
+                "name": "accountID",
+                "type": "text",
+                "phase": "fulfillment",
+                "description": "Account ID",
+                "value": "228048",
+                "value_error": "",
+                "title": "Title of the Parameter account ID",
+                "constraints": {
+                    "meta": {},
+                    "required": true,
+                    "hidden": false,
+                    "readonly": false
+                }
+            }, {
+                "id": "email",
+                "name": "email",
+                "type": "text",
+                "phase": "ordering",
+                "description": "email",
+                "value": "",
+                "value_error": "",
+                "title": "email",
+                "constraints": {
+                    "required": false,
+                    "meta": {},
+                    "hidden": false,
+                    "readonly": false
+                }
+            }
+        ],
+        "tiers": {
+            "customer": {
+                "id": "TA-0-5698-3877-0546",
+                "version": 1,
+                "name": "QADEVNER27091025",
+                "type": "customer",
+                "db": "US",
+                "external_id": "1043288",
+                "external_uid": "a5a098c7-913b-4d6e-874f-048f98b2c06a",
+                "owner": {
+                    "id": "PA-633-616",
+                    "name": "Telefonica",
+                    "icon": "/media/PA-633-616/media/icon_CZ7w6DY.png"
+                },
+                "scopes": [
+                    "customer"
+                ],
+                "hub": {
+                    "id": "HB-2747-1221",
+                    "name": "Integration HUB"
+                },
+                "events": {
+                    "created": {
+                        "at": "2019-09-27T08:27:26+00:00"
+                    },
+                    "updated": {
+                        "at": "2019-10-14T08:03:23+00:00"
+                    }
+                },
+                "environment": "test",
+                "contact_info": {
+                    "address_line1": "Av. Mariscal La Mar 918",
+                    "address_line2": null,
+                    "city": "Buenos Aires",
+                    "state": null,
+                    "postal_code": "B1827",
+                    "country": "ar",
+                    "contact": {
+                        "first_name": "QADEVNER27091025",
+                        "last_name": "TELF",
+                        "email": "QADEVNER27091025@yopmail.com",
+                        "phone_number": {
+                            "country_code": "+00",
+                            "area_code": "51",
+                            "phone_number": "12345678",
+                            "extension": ""
+                        }
+                    }
+                }
+            },
+            "tier1": {
+                "id": "TA-0-2372-3440-5680",
+                "version": 78,
+                "name": "Movistar Demo",
+                "type": "reseller",
+                "db": "EU",
+                "external_id": "1000180",
+                "external_uid": "db27abd8-2b2a-49af-9a08-5d9362f015e4",
+                "parent": {
+                    "id": "TA-0-1665-7272-8763",
+                    "name": "Telefónica Digital INT",
+                    "external_id": "1"
+                },
+                "owner": {
+                    "id": "PA-633-616",
+                    "name": "Telefonica",
+                    "icon": "/media/PA-633-616/media/icon_CZ7w6DY.png"
+                },
+                "scopes": [
+                    "tier1"
+                ],
+                "hub": {
+                    "id": "HB-2747-1221",
+                    "name": "Integration HUB"
+                },
+                "events": {
+                    "created": {
+                        "at": "2019-01-25T15:28:16+00:00",
+                        "by": {
+                            "id": "SU-339-207-107",
+                            "name": "HB-2747-1221"
+                        }
+                    },
+                    "updated": {
+                        "at": "2019-10-14T08:03:23+00:00",
+                        "by": {
+                            "id": "SU-339-207-107",
+                            "name": "HB-2747-1221"
+                        }
+                    }
+                },
+                "environment": "test",
+                "contact_info": {
+                    "address_line1": "Gardoki 1",
+                    "address_line2": "",
+                    "city": "Bilbao",
+                    "state": "",
+                    "postal_code": "48008",
+                    "country": "es",
+                    "contact": {
+                        "first_name": "Alicia",
+                        "last_name": "Florrick",
+                        "email": "eli.gold@yopmail.com",
+                        "phone_number": {
+                            "country_code": "+34",
+                            "area_code": "",
+                            "phone_number": "45600600",
+                            "extension": "3200"
+                        }
+                    }
+                }
+            },
+            "tier2": {
+                "id": "TA-0-1665-7272-8763",
+                "version": 3194,
+                "name": "Telefónica Digital INT",
+                "type": "reseller",
+                "db": "EU",
+                "external_id": "1",
+                "external_uid": "d14d5c8e-45fd-4a30-a45d-4c49d8db8069",
+                "owner": {
+                    "id": "PA-633-616",
+                    "name": "Telefonica",
+                    "icon": "/media/PA-633-616/media/icon_CZ7w6DY.png"
+                },
+                "scopes": [
+                    "tier1",
+                    "tier2"
+                ],
+                "hub": {
+                    "id": "HB-2747-1221",
+                    "name": "Integration HUB"
+                },
+                "events": {
+                    "created": {
+                        "at": "2018-10-05T10:41:12+00:00",
+                        "by": {
+                            "id": "SU-339-207-107",
+                            "name": "HB-2747-1221"
+                        }
+                    },
+                    "updated": {
+                        "at": "2019-10-24T11:06:04+00:00",
+                        "by": {
+                            "id": "SU-529-580-056",
+                            "name": "PLM API"
+                        }
+                    }
+                },
+                "environment": "test",
+                "contact_info": {
+                    "address_line1": "Distrito Telefónica",
+                    "address_line2": "Ronda de la Comunicación, s/n",
+                    "city": "Madrid",
+                    "state": "Madrid",
+                    "postal_code": "28050",
+                    "country": "es",
+                    "contact": {
+                        "first_name": "CSB",
+                        "last_name": "Password Resets",
+                        "email": "noreply@dev.csbtest.telefonica.com",
+                        "phone_number": {
+                            "country_code": "+44",
+                            "area_code": "7447",
+                            "phone_number": "274385",
+                            "extension": ""
+                        }
+                    }
+                }
+            }
+        },
+        "pending_request": {
+            "id": "PR-315-224-374-9-002",
+            "type": "suspend",
+            "status": "pending",
+            "template": {
+                "id": "TL-178-198-490",
+                "name": "Default Subscription Pending Template"
+            }
+        },
+        "marketplace": {
+            "id": "MP-00000",
+            "name": "None"
+        },
+        "contract": {
+            "id": "CRD-00000-00000-00000",
+            "name": "None"
+        },
+        "configuration": {
+            "params": []
+        }
+    },
+    "reason": "",
+    "status": "pending",
+    "created": "2022-03-03T02:11:47+00:00",
+    "updated": "2022-03-03T02:11:47+00:00",
+    "answered": false,
+    "assignee": "",
+    "activation_key": "Please wait while your request is being fulfilled.",
+    "template": {
+        "id": "TL-178-198-490",
+        "name": "Default Subscription Pending Template",
+        "message": "Please wait while your request is being fulfilled."
+    },
+    "marketplace": {
+        "id": "MP-00000",
+        "name": "None"
+    },
+    "contract": {
+        "id": "CRD-00000-00000-00000",
+        "name": "None"
+    },
+    "previous_approved_request": {
+        "id": "PR-7207-3286-1079-001"
+    },
+    "effective_date": null,
+    "planned_date": null,
+    "events": {
+        "created": {
+            "at": "2022-03-03T02:11:47+00:00"
+        },
+        "updated": {
+            "at": "2022-03-03T02:11:47+00:00"
+        }
+    }
+}, {
+    "id": "PR-643-994-955-9-002",
+    "type": "suspend",
+    "note": "",
+    "asset": {
+        "id": "AS-643-994-955-9",
+        "status": "active",
+        "external_id": "10008122",
+        "external_uid": "35ab63a4-c128-41e9-9753-1c59e9d71b3d",
+        "product": {
+            "id": "PRD-136-884-767",
+            "icon": "/media/VA-209-443/PRD-136-884-767/media/PRD-136-884-767-logo.png",
+            "name": "APS PPU Test",
+            "status": "published"
+        },
+        "connection": {
+            "id": "CT-2955-7645",
+            "type": "test",
+            "status": "approved",
+            "provider": {
+                "id": "PA-633-616",
+                "name": "Telefonica",
+                "icon": "/media/PA-633-616/media/icon_CZ7w6DY.png"
+            },
+            "vendor": {
+                "id": "VA-209-443",
+                "name": "Telefonica Vendor"
+            },
+            "hub": {
+                "id": "HB-2747-1221",
+                "name": "Integration HUB"
+            },
+            "created_at": "2019-04-29T21:41:34+00:00"
+        },
+        "events": {
+            "created": {
+                "at": "2019-10-02T12:37:48+00:00"
+            },
+            "updated": {
+                "at": "2020-03-01T02:15:20+00:00"
+            }
+        },
+        "items": [{
+                "id": "MPN_PPU",
+                "global_id": "PRD-136-884-767-0001",
+                "mpn": "MPN-PPU",
+                "old_quantity": "unlimited",
+                "quantity": "unlimited",
+                "type": "Unit*H",
+                "display_name": "PPU",
+                "period": "Monthly",
+                "item_type": "PPU"
+            }, {
+                "id": "PRD_136_884_767_0002",
+                "global_id": "PRD-136-884-767-0002",
+                "mpn": "",
+                "old_quantity": "1",
+                "quantity": "1",
+                "type": "reservation",
+                "display_name": "Prd 136 884 767 0002",
+                "period": "Monthly",
+                "item_type": "Reservation"
+            }
+        ],
+        "params": [{
+                "id": "CUIT",
+                "name": "CUIT",
+                "type": "text",
+                "phase": "ordering",
+                "description": "CUIT",
+                "value": "",
+                "value_error": "",
+                "title": "CUIT",
+                "constraints": {
+                    "required": true,
+                    "meta": {},
+                    "hidden": false,
+                    "readonly": false
+                }
+            }, {
+                "id": "accountID",
+                "name": "accountID",
+                "type": "text",
+                "phase": "fulfillment",
+                "description": "Account ID",
+                "value": "185229",
+                "value_error": "",
+                "title": "Title of the Parameter account ID",
+                "constraints": {
+                    "meta": {},
+                    "required": true,
+                    "hidden": false,
+                    "readonly": false
+                }
+            }, {
+                "id": "email",
+                "name": "email",
+                "type": "text",
+                "phase": "ordering",
+                "description": "email",
+                "value": "",
+                "value_error": "",
+                "title": "email",
+                "constraints": {
+                    "required": false,
+                    "meta": {},
+                    "hidden": false,
+                    "readonly": false
+                }
+            }
+        ],
+        "tiers": {
+            "customer": {
+                "id": "TA-0-5698-3877-0546",
+                "version": 1,
+                "name": "QADEVNER27091025",
+                "type": "customer",
+                "db": "US",
+                "external_id": "1043288",
+                "external_uid": "a5a098c7-913b-4d6e-874f-048f98b2c06a",
+                "owner": {
+                    "id": "PA-633-616",
+                    "name": "Telefonica",
+                    "icon": "/media/PA-633-616/media/icon_CZ7w6DY.png"
+                },
+                "scopes": [
+                    "customer"
+                ],
+                "hub": {
+                    "id": "HB-2747-1221",
+                    "name": "Integration HUB"
+                },
+                "events": {
+                    "created": {
+                        "at": "2019-09-27T08:27:26+00:00"
+                    },
+                    "updated": {
+                        "at": "2019-10-14T08:03:23+00:00"
+                    }
+                },
+                "environment": "test",
+                "contact_info": {
+                    "address_line1": "Av. Mariscal La Mar 918",
+                    "address_line2": null,
+                    "city": "Buenos Aires",
+                    "state": null,
+                    "postal_code": "B1827",
+                    "country": "ar",
+                    "contact": {
+                        "first_name": "QADEVNER27091025",
+                        "last_name": "TELF",
+                        "email": "QADEVNER27091025@yopmail.com",
+                        "phone_number": {
+                            "country_code": "+00",
+                            "area_code": "51",
+                            "phone_number": "12345678",
+                            "extension": ""
+                        }
+                    }
+                }
+            },
+            "tier1": {
+                "id": "TA-0-2372-3440-5680",
+                "version": 78,
+                "name": "Movistar Demo",
+                "type": "reseller",
+                "db": "EU",
+                "external_id": "1000180",
+                "external_uid": "db27abd8-2b2a-49af-9a08-5d9362f015e4",
+                "parent": {
+                    "id": "TA-0-1665-7272-8763",
+                    "name": "Telefónica Digital INT",
+                    "external_id": "1"
+                },
+                "owner": {
+                    "id": "PA-633-616",
+                    "name": "Telefonica",
+                    "icon": "/media/PA-633-616/media/icon_CZ7w6DY.png"
+                },
+                "scopes": [
+                    "tier1"
+                ],
+                "hub": {
+                    "id": "HB-2747-1221",
+                    "name": "Integration HUB"
+                },
+                "events": {
+                    "created": {
+                        "at": "2019-01-25T15:28:16+00:00",
+                        "by": {
+                            "id": "SU-339-207-107",
+                            "name": "HB-2747-1221"
+                        }
+                    },
+                    "updated": {
+                        "at": "2019-10-14T08:03:23+00:00",
+                        "by": {
+                            "id": "SU-339-207-107",
+                            "name": "HB-2747-1221"
+                        }
+                    }
+                },
+                "environment": "test",
+                "contact_info": {
+                    "address_line1": "Gardoki 1",
+                    "address_line2": "",
+                    "city": "Bilbao",
+                    "state": "",
+                    "postal_code": "48008",
+                    "country": "es",
+                    "contact": {
+                        "first_name": "Alicia",
+                        "last_name": "Florrick",
+                        "email": "eli.gold@yopmail.com",
+                        "phone_number": {
+                            "country_code": "+34",
+                            "area_code": "",
+                            "phone_number": "45600600",
+                            "extension": "3200"
+                        }
+                    }
+                }
+            },
+            "tier2": {
+                "id": "TA-0-1665-7272-8763",
+                "version": 3194,
+                "name": "Telefónica Digital INT",
+                "type": "reseller",
+                "db": "EU",
+                "external_id": "1",
+                "external_uid": "d14d5c8e-45fd-4a30-a45d-4c49d8db8069",
+                "owner": {
+                    "id": "PA-633-616",
+                    "name": "Telefonica",
+                    "icon": "/media/PA-633-616/media/icon_CZ7w6DY.png"
+                },
+                "scopes": [
+                    "tier1",
+                    "tier2"
+                ],
+                "hub": {
+                    "id": "HB-2747-1221",
+                    "name": "Integration HUB"
+                },
+                "events": {
+                    "created": {
+                        "at": "2018-10-05T10:41:12+00:00",
+                        "by": {
+                            "id": "SU-339-207-107",
+                            "name": "HB-2747-1221"
+                        }
+                    },
+                    "updated": {
+                        "at": "2019-10-24T11:06:04+00:00",
+                        "by": {
+                            "id": "SU-529-580-056",
+                            "name": "PLM API"
+                        }
+                    }
+                },
+                "environment": "test",
+                "contact_info": {
+                    "address_line1": "Distrito Telefónica",
+                    "address_line2": "Ronda de la Comunicación, s/n",
+                    "city": "Madrid",
+                    "state": "Madrid",
+                    "postal_code": "28050",
+                    "country": "es",
+                    "contact": {
+                        "first_name": "CSB",
+                        "last_name": "Password Resets",
+                        "email": "noreply@dev.csbtest.telefonica.com",
+                        "phone_number": {
+                            "country_code": "+44",
+                            "area_code": "7447",
+                            "phone_number": "274385",
+                            "extension": ""
+                        }
+                    }
+                }
+            }
+        },
+        "pending_request": {
+            "id": "PR-643-994-955-9-002",
+            "type": "suspend",
+            "status": "pending",
+            "template": {
+                "id": "TL-178-198-490",
+                "name": "Default Subscription Pending Template"
+            }
+        },
+        "marketplace": {
+            "id": "MP-00000",
+            "name": "None"
+        },
+        "contract": {
+            "id": "CRD-00000-00000-00000",
+            "name": "None"
+        },
+        "configuration": {
+            "params": []
+        }
+    },
+    "reason": "",
+    "status": "pending",
+    "created": "2022-03-03T02:11:48+00:00",
+    "updated": "2022-03-03T02:11:48+00:00",
+    "answered": false,
+    "assignee": "",
+    "activation_key": "Please wait while your request is being fulfilled.",
+    "template": {
+        "id": "TL-178-198-490",
+        "name": "Default Subscription Pending Template",
+        "message": "Please wait while your request is being fulfilled."
+    },
+    "marketplace": {
+        "id": "MP-00000",
+        "name": "None"
+    },
+    "contract": {
+        "id": "CRD-00000-00000-00000",
+        "name": "None"
+    },
+    "previous_approved_request": {
+        "id": "PR-6465-2470-3053-001"
+    },
+    "effective_date": null,
+    "planned_date": null,
+    "events": {
+        "created": {
+            "at": "2022-03-03T02:11:48+00:00"
+        },
+        "updated": {
+            "at": "2022-03-03T02:11:48+00:00"
+        }
+    }
+}, {
+    "id": "PR-726-252-935-4-002",
+    "type": "suspend",
+    "note": "",
+    "asset": {
+        "id": "AS-726-252-935-4",
+        "status": "active",
+        "external_id": "10008130",
+        "external_uid": "b072ae8b-fbb3-4ebd-a106-2f4604046f90",
+        "product": {
+            "id": "PRD-136-884-767",
+            "icon": "/media/VA-209-443/PRD-136-884-767/media/PRD-136-884-767-logo.png",
+            "name": "APS PPU Test",
+            "status": "published"
+        },
+        "connection": {
+            "id": "CT-2955-7645",
+            "type": "test",
+            "status": "approved",
+            "provider": {
+                "id": "PA-633-616",
+                "name": "Telefonica",
+                "icon": "/media/PA-633-616/media/icon_CZ7w6DY.png"
+            },
+            "vendor": {
+                "id": "VA-209-443",
+                "name": "Telefonica Vendor"
+            },
+            "hub": {
+                "id": "HB-2747-1221",
+                "name": "Integration HUB"
+            },
+            "created_at": "2019-04-29T21:41:34+00:00"
+        },
+        "events": {
+            "created": {
+                "at": "2019-10-02T12:47:44+00:00"
+            },
+            "updated": {
+                "at": "2020-03-01T02:15:28+00:00"
+            }
+        },
+        "items": [{
+                "id": "MPN_PPU",
+                "global_id": "PRD-136-884-767-0001",
+                "mpn": "MPN-PPU",
+                "old_quantity": "unlimited",
+                "quantity": "unlimited",
+                "type": "Unit*H",
+                "display_name": "PPU",
+                "period": "Monthly",
+                "item_type": "PPU"
+            }, {
+                "id": "PRD_136_884_767_0002",
+                "global_id": "PRD-136-884-767-0002",
+                "mpn": "",
+                "old_quantity": "1",
+                "quantity": "1",
+                "type": "reservation",
+                "display_name": "Prd 136 884 767 0002",
+                "period": "Monthly",
+                "item_type": "Reservation"
+            }
+        ],
+        "params": [{
+                "id": "CUIT",
+                "name": "CUIT",
+                "type": "text",
+                "phase": "ordering",
+                "description": "CUIT",
+                "value": "",
+                "value_error": "",
+                "title": "CUIT",
+                "constraints": {
+                    "required": true,
+                    "meta": {},
+                    "hidden": false,
+                    "readonly": false
+                }
+            }, {
+                "id": "accountID",
+                "name": "accountID",
+                "type": "text",
+                "phase": "fulfillment",
+                "description": "Account ID",
+                "value": "430711",
+                "value_error": "",
+                "title": "Title of the Parameter account ID",
+                "constraints": {
+                    "meta": {},
+                    "required": true,
+                    "hidden": false,
+                    "readonly": false
+                }
+            }, {
+                "id": "email",
+                "name": "email",
+                "type": "text",
+                "phase": "ordering",
+                "description": "email",
+                "value": "",
+                "value_error": "",
+                "title": "email",
+                "constraints": {
+                    "required": false,
+                    "meta": {},
+                    "hidden": false,
+                    "readonly": false
+                }
+            }
+        ],
+        "tiers": {
+            "customer": {
+                "id": "TA-0-5698-3877-0546",
+                "version": 1,
+                "name": "QADEVNER27091025",
+                "type": "customer",
+                "db": "US",
+                "external_id": "1043288",
+                "external_uid": "a5a098c7-913b-4d6e-874f-048f98b2c06a",
+                "owner": {
+                    "id": "PA-633-616",
+                    "name": "Telefonica",
+                    "icon": "/media/PA-633-616/media/icon_CZ7w6DY.png"
+                },
+                "scopes": [
+                    "customer"
+                ],
+                "hub": {
+                    "id": "HB-2747-1221",
+                    "name": "Integration HUB"
+                },
+                "events": {
+                    "created": {
+                        "at": "2019-09-27T08:27:26+00:00"
+                    },
+                    "updated": {
+                        "at": "2019-10-14T08:03:23+00:00"
+                    }
+                },
+                "environment": "test",
+                "contact_info": {
+                    "address_line1": "Av. Mariscal La Mar 918",
+                    "address_line2": null,
+                    "city": "Buenos Aires",
+                    "state": null,
+                    "postal_code": "B1827",
+                    "country": "ar",
+                    "contact": {
+                        "first_name": "QADEVNER27091025",
+                        "last_name": "TELF",
+                        "email": "QADEVNER27091025@yopmail.com",
+                        "phone_number": {
+                            "country_code": "+00",
+                            "area_code": "51",
+                            "phone_number": "12345678",
+                            "extension": ""
+                        }
+                    }
+                }
+            },
+            "tier1": {
+                "id": "TA-0-2372-3440-5680",
+                "version": 78,
+                "name": "Movistar Demo",
+                "type": "reseller",
+                "db": "EU",
+                "external_id": "1000180",
+                "external_uid": "db27abd8-2b2a-49af-9a08-5d9362f015e4",
+                "parent": {
+                    "id": "TA-0-1665-7272-8763",
+                    "name": "Telefónica Digital INT",
+                    "external_id": "1"
+                },
+                "owner": {
+                    "id": "PA-633-616",
+                    "name": "Telefonica",
+                    "icon": "/media/PA-633-616/media/icon_CZ7w6DY.png"
+                },
+                "scopes": [
+                    "tier1"
+                ],
+                "hub": {
+                    "id": "HB-2747-1221",
+                    "name": "Integration HUB"
+                },
+                "events": {
+                    "created": {
+                        "at": "2019-01-25T15:28:16+00:00",
+                        "by": {
+                            "id": "SU-339-207-107",
+                            "name": "HB-2747-1221"
+                        }
+                    },
+                    "updated": {
+                        "at": "2019-10-14T08:03:23+00:00",
+                        "by": {
+                            "id": "SU-339-207-107",
+                            "name": "HB-2747-1221"
+                        }
+                    }
+                },
+                "environment": "test",
+                "contact_info": {
+                    "address_line1": "Gardoki 1",
+                    "address_line2": "",
+                    "city": "Bilbao",
+                    "state": "",
+                    "postal_code": "48008",
+                    "country": "es",
+                    "contact": {
+                        "first_name": "Alicia",
+                        "last_name": "Florrick",
+                        "email": "eli.gold@yopmail.com",
+                        "phone_number": {
+                            "country_code": "+34",
+                            "area_code": "",
+                            "phone_number": "45600600",
+                            "extension": "3200"
+                        }
+                    }
+                }
+            },
+            "tier2": {
+                "id": "TA-0-1665-7272-8763",
+                "version": 3194,
+                "name": "Telefónica Digital INT",
+                "type": "reseller",
+                "db": "EU",
+                "external_id": "1",
+                "external_uid": "d14d5c8e-45fd-4a30-a45d-4c49d8db8069",
+                "owner": {
+                    "id": "PA-633-616",
+                    "name": "Telefonica",
+                    "icon": "/media/PA-633-616/media/icon_CZ7w6DY.png"
+                },
+                "scopes": [
+                    "tier1",
+                    "tier2"
+                ],
+                "hub": {
+                    "id": "HB-2747-1221",
+                    "name": "Integration HUB"
+                },
+                "events": {
+                    "created": {
+                        "at": "2018-10-05T10:41:12+00:00",
+                        "by": {
+                            "id": "SU-339-207-107",
+                            "name": "HB-2747-1221"
+                        }
+                    },
+                    "updated": {
+                        "at": "2019-10-24T11:06:04+00:00",
+                        "by": {
+                            "id": "SU-529-580-056",
+                            "name": "PLM API"
+                        }
+                    }
+                },
+                "environment": "test",
+                "contact_info": {
+                    "address_line1": "Distrito Telefónica",
+                    "address_line2": "Ronda de la Comunicación, s/n",
+                    "city": "Madrid",
+                    "state": "Madrid",
+                    "postal_code": "28050",
+                    "country": "es",
+                    "contact": {
+                        "first_name": "CSB",
+                        "last_name": "Password Resets",
+                        "email": "noreply@dev.csbtest.telefonica.com",
+                        "phone_number": {
+                            "country_code": "+44",
+                            "area_code": "7447",
+                            "phone_number": "274385",
+                            "extension": ""
+                        }
+                    }
+                }
+            }
+        },
+        "pending_request": {
+            "id": "PR-726-252-935-4-002",
+            "type": "suspend",
+            "status": "pending",
+            "template": {
+                "id": "TL-178-198-490",
+                "name": "Default Subscription Pending Template"
+            }
+        },
+        "marketplace": {
+            "id": "MP-00000",
+            "name": "None"
+        },
+        "contract": {
+            "id": "CRD-00000-00000-00000",
+            "name": "None"
+        },
+        "configuration": {
+            "params": []
+        }
+    },
+    "reason": "",
+    "status": "pending",
+    "created": "2022-03-03T02:11:48+00:00",
+    "updated": "2022-03-03T02:11:48+00:00",
+    "answered": false,
+    "assignee": "",
+    "activation_key": "Please wait while your request is being fulfilled.",
+    "template": {
+        "id": "TL-178-198-490",
+        "name": "Default Subscription Pending Template",
+        "message": "Please wait while your request is being fulfilled."
+    },
+    "marketplace": {
+        "id": "MP-00000",
+        "name": "None"
+    },
+    "contract": {
+        "id": "CRD-00000-00000-00000",
+        "name": "None"
+    },
+    "previous_approved_request": {
+        "id": "PR-8272-3339-8116-001"
+    },
+    "effective_date": null,
+    "planned_date": null,
+    "events": {
+        "created": {
+            "at": "2022-03-03T02:11:48+00:00"
+        },
+        "updated": {
+            "at": "2022-03-03T02:11:48+00:00"
+        }
+    }
+}
+]
